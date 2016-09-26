@@ -1,0 +1,40 @@
+/* Options */
+#embed_options,
+#gallery_options,
+#link_options,
+#quote_options,
+.cmb_id__meta_post_sidebar_position,
+#grid_options,
+#slider_options .form-table tr:not(.cmb_id__meta_slider_show),
+#title_options .form-table tr:not(.cmb_id__meta_title){
+    display: none;
+}
+
+.post-type-portfolio #embed_options,
+.post-type-portfolio #gallery_options{
+    display: block;
+}
+
+.cmb_radio_list input{
+    display: none;
+}
+
+.cmb_radio_list label,
+.cmb_radio_list label img{
+    display: block;
+}
+
+.cmb_radio_list label
+ { 
+    border: 2px solid #ccc;
+}
+
+.cmb_radio_list input[type="radio"]:checked + label
+{ 
+    border: 2px solid #1e8cbe;
+}
+
+#_meta_title_icon{
+    font-family:'FontAwesome';
+    font-size: 18px;
+}

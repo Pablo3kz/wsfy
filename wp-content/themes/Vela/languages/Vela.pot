@@ -1,0 +1,3488 @@
+# Vela Theme
+msgid ""
+msgstr ""
+"Project-Id-Version: Vela\n"
+"POT-Creation-Date: 2016-06-30 13:44+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:6
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: admin/importer/class-wyde-ajax-importer.php:56
+msgid "All done"
+msgstr ""
+
+#: admin/importer/class-wyde-ajax-importer.php:59
+msgid "There has been an error."
+msgstr ""
+
+#: admin/importer/class-wyde-ajax-importer.php:63
+msgid "Cannot access to Administration Panel options."
+msgstr ""
+
+#: admin/options.php:64
+msgid "Pages"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Posts"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Portfolios"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Team Members"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Testimonials"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Widgets"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Sliders"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Settings"
+msgstr ""
+
+#: admin/options.php:92
+msgid "Import Demo"
+msgstr ""
+
+#: admin/options.php:93
+msgid ""
+"Please make sure you have required plugins installed and activated to "
+"receive that portion of the content. This is recommended to do on fresh "
+"installs."
+msgstr ""
+
+#: admin/options.php:102
+msgid "WARNING:"
+msgstr ""
+
+#: admin/options.php:103
+msgid ""
+"Importing demo content will replace your current settings and append your "
+"pages and posts. It can also take a minute to complete. <br />You can use <a "
+"href=\"https://wordpress.org/plugins/wordpress-reset/\" target=\"_blank"
+"\">WordPress Reset</a> plugin to remove all existing data before importing."
+msgstr ""
+
+#: admin/options.php:132
+msgid "Success!"
+msgstr ""
+
+#: admin/options.php:133
+msgid "The demo content has been successfully imported."
+msgstr ""
+
+#: admin/options.php:144
+msgid "ERROR!"
+msgstr ""
+
+#: admin/options.php:145
+msgid "An error occurred while importing demo data, please try again later."
+msgstr ""
+
+#: admin/options.php:152
+msgid "Home"
+msgstr ""
+
+#: admin/options.php:166
+msgid "Styling"
+msgstr ""
+
+#: admin/options.php:172
+msgid "Predefined Colors"
+msgstr ""
+
+#: admin/options.php:173
+msgid "Select a predefined color schemes."
+msgstr ""
+
+#: admin/options.php:180
+msgid "Custom Color Scheme"
+msgstr ""
+
+#: admin/options.php:181
+msgid "Customize your own color scheme."
+msgstr ""
+
+#: admin/options.php:187
+msgid "Color Scheme"
+msgstr ""
+
+#: admin/options.php:188
+msgid "Choose your own color scheme."
+msgstr ""
+
+#: admin/options.php:196 admin/options.php:424 admin/options.php:1116
+#: inc/metaboxes/options.php:488 shortcodes/classes/blog-posts.php:41
+msgid "Layout"
+msgstr ""
+
+#: admin/options.php:197
+msgid "Select layout for your site."
+msgstr ""
+
+#: admin/options.php:216
+msgid "Box Shadow"
+msgstr ""
+
+#: admin/options.php:217
+msgid "Attaches drop-shadow to the boxed layout."
+msgstr ""
+
+#: admin/options.php:223 admin/options.php:767 admin/options.php:872
+#: admin/options.php:879 inc/metaboxes/options.php:280
+msgid "Background"
+msgstr ""
+
+#: admin/options.php:224 admin/options.php:768 admin/options.php:880
+msgid "Select background type."
+msgstr ""
+
+#: admin/options.php:235 admin/options.php:805 admin/options.php:917
+#: inc/metaboxes/options.php:192 inc/metaboxes/options.php:306
+#: shortcodes/class-shortcodes.php:252 shortcodes/class-shortcodes.php:419
+#: shortcodes/class-shortcodes.php:567 shortcodes/class-shortcodes.php:678
+#: shortcodes/class-shortcodes.php:1097 shortcodes/classes/icon-block.php:136
+#: shortcodes/classes/pricing-box.php:77
+msgid "Background Color"
+msgstr ""
+
+#: admin/options.php:244
+msgid "Select a background color for your site."
+msgstr ""
+
+#: admin/options.php:253 admin/options.php:791 admin/options.php:893
+#: inc/metaboxes/options.php:186 inc/metaboxes/options.php:300
+msgid "Background Image"
+msgstr ""
+
+#: admin/options.php:255
+msgid "Customize background image for your site."
+msgstr ""
+
+#: admin/options.php:268
+msgid "Background Pattern"
+msgstr ""
+
+#: admin/options.php:269
+msgid "Select a background pattern."
+msgstr ""
+
+#: admin/options.php:290
+msgid "Background Pattern Overlay"
+msgstr ""
+
+#: admin/options.php:291
+msgid "Apply an overlay pattern to the background."
+msgstr ""
+
+#: admin/options.php:298
+msgid "Fixed Background Pattern"
+msgstr ""
+
+#: admin/options.php:299
+msgid "The background pattern is fixed with regard to the viewport."
+msgstr ""
+
+#: admin/options.php:311 admin/options.php:317
+msgid "Favicon"
+msgstr ""
+
+#: admin/options.php:318
+msgid "Customize a favicon for your site."
+msgstr ""
+
+#: admin/options.php:325
+msgid "Favicon Image (.PNG)"
+msgstr ""
+
+#: admin/options.php:327
+msgid ""
+"Upload a favicon image for your site, or you can specify an image URL "
+"directly."
+msgstr ""
+
+#: admin/options.php:328 admin/options.php:340 admin/options.php:351
+#: admin/options.php:361 admin/options.php:371 admin/options.php:381
+msgid "Icon dimension:"
+msgstr ""
+
+#: admin/options.php:337
+msgid "Favicon (.ICO)"
+msgstr ""
+
+#: admin/options.php:339
+msgid ""
+"Upload a favicon for your site, or you can specify an icon URL directly."
+msgstr ""
+
+#: admin/options.php:347
+msgid "Apple iPhone Icon"
+msgstr ""
+
+#: admin/options.php:350
+msgid "Favicon for Apple iPhone."
+msgstr ""
+
+#: admin/options.php:357
+msgid "Apple iPhone Icon (Retina Version)"
+msgstr ""
+
+#: admin/options.php:360
+msgid "Favicon for Apple iPhone Retina Version."
+msgstr ""
+
+#: admin/options.php:367
+msgid "Apple iPad Icon"
+msgstr ""
+
+#: admin/options.php:370
+msgid "Favicon for Apple iPad."
+msgstr ""
+
+#: admin/options.php:377
+msgid "Apple iPad Icon (Retina Version)"
+msgstr ""
+
+#: admin/options.php:380
+msgid "Favicon for Apple iPad Retina Version."
+msgstr ""
+
+#: admin/options.php:390 admin/options.php:396 inc/metaboxes/options.php:66
+msgid "Header"
+msgstr ""
+
+#: admin/options.php:397
+msgid "Customize the header section."
+msgstr ""
+
+#: admin/options.php:403
+msgid "Sticky Header"
+msgstr ""
+
+#: admin/options.php:404
+msgid "Enable sticky header."
+msgstr ""
+
+#: admin/options.php:410
+msgid "Transparent Header"
+msgstr ""
+
+#: admin/options.php:411
+msgid ""
+"Enable transparent header to display header overlay sliders and page content."
+msgstr ""
+
+#: admin/options.php:417
+msgid "Fluid Header"
+msgstr ""
+
+#: admin/options.php:418
+msgid "Turn on to use fluid header or off to use fixed header width."
+msgstr ""
+
+#: admin/options.php:425
+msgid "Select header layout."
+msgstr ""
+
+#: admin/options.php:440 inc/metaboxes/options.php:76
+msgid "Menu Style"
+msgstr ""
+
+#: admin/options.php:441 inc/metaboxes/options.php:77
+msgid ""
+"Select a menu style. Choose \"Light\" for the header which has \"Dark\" "
+"background color."
+msgstr ""
+
+#: admin/options.php:451
+msgid "Top Bar Menu"
+msgstr ""
+
+#: admin/options.php:452
+msgid "Select the position of header top bar menu."
+msgstr ""
+
+#: admin/options.php:463
+msgid "Social Icons"
+msgstr ""
+
+#: admin/options.php:464
+msgid "Select the position of header top bar social media icons."
+msgstr ""
+
+#: admin/options.php:475
+msgid "Search Icon"
+msgstr ""
+
+#: admin/options.php:476
+msgid "Show search icon in header."
+msgstr ""
+
+#: admin/options.php:482
+msgid "Shopping Cart Icon"
+msgstr ""
+
+#: admin/options.php:483
+msgid "Show shopping cart icon in header."
+msgstr ""
+
+#: admin/options.php:489
+msgid "Header Position"
+msgstr ""
+
+#: admin/options.php:490
+msgid "Select header position."
+msgstr ""
+
+#: admin/options.php:500 admin/options.php:508
+msgid "Logo"
+msgstr ""
+
+#: admin/options.php:501
+msgid "Customize a logo image for your site."
+msgstr ""
+
+#: admin/options.php:511
+msgid "Logo image for your site, or you can specify an image URL directly."
+msgstr ""
+
+#: admin/options.php:512 admin/options.php:538 admin/options.php:577
+msgid "Recommended height: 50px."
+msgstr ""
+
+#: admin/options.php:521
+msgid "Logo (Retina Version)"
+msgstr ""
+
+#: admin/options.php:524
+msgid ""
+"Retina version for your logo image, this image should be exactly 2x the size "
+"of normal logo."
+msgstr ""
+
+#: admin/options.php:525 admin/options.php:551
+msgid "Recommended height: 100px."
+msgstr ""
+
+#: admin/options.php:534
+msgid "Light Logo"
+msgstr ""
+
+#: admin/options.php:537
+msgid "Light version of logo image for dark background."
+msgstr ""
+
+#: admin/options.php:547
+msgid "Light Logo (Retina Version)"
+msgstr ""
+
+#: admin/options.php:550
+msgid ""
+"Retina version for your light logo image, this image should be exactly 2x "
+"the size of light logo"
+msgstr ""
+
+#: admin/options.php:560
+msgid "Sticky Logo"
+msgstr ""
+
+#: admin/options.php:563
+msgid "Sticky header logo."
+msgstr ""
+
+#: admin/options.php:564
+msgid "Recommended height: 25px."
+msgstr ""
+
+#: admin/options.php:573
+msgid "Sticky Logo (Retina Version)"
+msgstr ""
+
+#: admin/options.php:576
+msgid "Retina version for sticky header logo."
+msgstr ""
+
+#: admin/options.php:588 inc/metaboxes/options.php:666
+msgid "Footer"
+msgstr ""
+
+#: admin/options.php:594 admin/options.php:601
+msgid "Footer Widget Area"
+msgstr ""
+
+#: admin/options.php:595
+msgid "Customize the footer widget area."
+msgstr ""
+
+#: admin/options.php:602
+msgid "Display footer widgets."
+msgstr ""
+
+#: admin/options.php:609 admin/options.php:670
+#: shortcodes/class-shortcodes.php:241 shortcodes/class-shortcodes.php:408
+#: shortcodes/class-shortcodes.php:556 shortcodes/class-shortcodes.php:667
+#: shortcodes/classes/pricing-box.php:85
+msgid "Text Color"
+msgstr ""
+
+#: admin/options.php:610
+msgid "Set a footer widget area text color."
+msgstr ""
+
+#: admin/options.php:619
+msgid "Footer Widget Area Background"
+msgstr ""
+
+#: admin/options.php:620
+msgid "Set a footer widget area background."
+msgstr ""
+
+#: admin/options.php:634
+msgid "Footer Background Parallax"
+msgstr ""
+
+#: admin/options.php:635 inc/metaboxes/options.php:211
+#: inc/metaboxes/options.php:344
+msgid "Enable parallax background scrolling."
+msgstr ""
+
+#: admin/options.php:642
+msgid "Footer Widget Columns"
+msgstr ""
+
+#: admin/options.php:643
+msgid "Select the number of columns to display in the footer widget area."
+msgstr ""
+
+#: admin/options.php:655 admin/options.php:662
+msgid "Footer Bottom Bar"
+msgstr ""
+
+#: admin/options.php:656
+msgid "Customize the footer bottom bar."
+msgstr ""
+
+#: admin/options.php:663
+msgid "Display a footer bar at the bottom of the page."
+msgstr ""
+
+#: admin/options.php:671
+msgid "Set a footer bottom bar text color."
+msgstr ""
+
+#: admin/options.php:680
+msgid "Footer Bar Background"
+msgstr ""
+
+#: admin/options.php:681
+msgid "Set a footer bottom bar background."
+msgstr ""
+
+#: admin/options.php:695
+msgid "Footer Bar Columns"
+msgstr ""
+
+#: admin/options.php:696
+msgid "Select a footer bottom bar columns."
+msgstr ""
+
+#: admin/options.php:707
+msgid "Show Footer Text"
+msgstr ""
+
+#: admin/options.php:708
+msgid "Display a footer text."
+msgstr ""
+
+#: admin/options.php:715
+msgid "Footer Text"
+msgstr ""
+
+#: admin/options.php:716
+msgid "Enter your footer text here."
+msgstr ""
+
+#: admin/options.php:727
+msgid "Footer Menu"
+msgstr ""
+
+#: admin/options.php:728
+msgid "Select a footer bar menu items."
+msgstr ""
+
+#: admin/options.php:742
+msgid "Page"
+msgstr ""
+
+#: admin/options.php:748 shortcodes/class-shortcodes.php:925
+#: shortcodes/class-shortcodes.php:1425 shortcodes/class-shortcodes.php:1428
+#: shortcodes/class-shortcodes.php:1544 shortcodes/class-shortcodes.php:2151
+#: shortcodes/classes/blog-posts.php:24 shortcodes/classes/button.php:19
+#: shortcodes/classes/clients-carousel.php:19
+#: shortcodes/classes/counter-box.php:19 shortcodes/classes/donut-chart.php:19
+#: shortcodes/classes/half-donut-chart.php:19 shortcodes/classes/heading.php:19
+#: shortcodes/classes/info-box.php:20 shortcodes/classes/link-button.php:19
+#: shortcodes/classes/portfolio-grid.php:22
+#: shortcodes/classes/posts-grid.php:24 shortcodes/classes/posts-slider.php:19
+#: shortcodes/classes/pricing-box.php:19 shortcodes/classes/team-slider.php:19
+#: shortcodes/classes/testimonials-slider.php:19
+msgid "Title"
+msgstr ""
+
+#: admin/options.php:749
+msgid "Default settings for page title."
+msgstr ""
+
+#: admin/options.php:755 inc/metaboxes/options.php:153
+msgid "Title Alignment"
+msgstr ""
+
+#: admin/options.php:756 inc/metaboxes/options.php:154
+msgid "Select the title alignment."
+msgstr ""
+
+#: admin/options.php:781 admin/options.php:907 inc/metaboxes/options.php:180
+#: inc/metaboxes/options.php:294
+msgid "Background Video"
+msgstr ""
+
+#: admin/options.php:782 admin/options.php:908
+msgid "Customize background video."
+msgstr ""
+
+#: admin/options.php:793 admin/options.php:895
+msgid "Customize background image."
+msgstr ""
+
+#: admin/options.php:806 admin/options.php:918
+#: shortcodes/classes/pricing-box.php:80
+msgid "Select a background color."
+msgstr ""
+
+#: admin/options.php:812 admin/options.php:948
+msgid "Parallax Background"
+msgstr ""
+
+#: admin/options.php:813 admin/options.php:949
+msgid "Enable parallax background when scrolling."
+msgstr ""
+
+#: admin/options.php:820 inc/metaboxes/options.php:217
+msgid "Title Background Overlay"
+msgstr ""
+
+#: admin/options.php:821 inc/metaboxes/options.php:218
+msgid "Apply an overlay to the title background."
+msgstr ""
+
+#: admin/options.php:833 admin/options.php:938 inc/metaboxes/options.php:229
+#: inc/metaboxes/options.php:336 shortcodes/class-shortcodes.php:287
+#: shortcodes/class-shortcodes.php:442
+msgid "Overlay Color"
+msgstr ""
+
+#: admin/options.php:834 admin/options.php:939 inc/metaboxes/options.php:230
+#: inc/metaboxes/options.php:337 shortcodes/class-shortcodes.php:289
+#: shortcodes/class-shortcodes.php:444
+msgid "Select background color overlay."
+msgstr ""
+
+#: admin/options.php:843 inc/metaboxes/options.php:236
+#: shortcodes/class-shortcodes.php:298 shortcodes/class-shortcodes.php:453
+msgid "Content Mask"
+msgstr ""
+
+#: admin/options.php:844 inc/metaboxes/options.php:237
+#: shortcodes/class-shortcodes.php:335 shortcodes/class-shortcodes.php:490
+msgid "Select content mask style."
+msgstr ""
+
+#: admin/options.php:864 inc/metaboxes/options.php:258
+#: shortcodes/class-shortcodes.php:309 shortcodes/class-shortcodes.php:464
+msgid "Mask Color"
+msgstr ""
+
+#: admin/options.php:865 inc/metaboxes/options.php:259
+#: shortcodes/class-shortcodes.php:311 shortcodes/class-shortcodes.php:466
+msgid "Select content mask color."
+msgstr ""
+
+#: admin/options.php:873
+msgid "Default settings for page background."
+msgstr ""
+
+#: admin/options.php:925 inc/metaboxes/options.php:324
+#: shortcodes/class-shortcodes.php:276 shortcodes/class-shortcodes.php:431
+msgid "Background Overlay"
+msgstr ""
+
+#: admin/options.php:926 inc/metaboxes/options.php:325
+#: shortcodes/class-shortcodes.php:283 shortcodes/class-shortcodes.php:438
+msgid "Apply an overlay to the background."
+msgstr ""
+
+#: admin/options.php:955
+msgid "Page Options"
+msgstr ""
+
+#: admin/options.php:956
+msgid "Customize page options."
+msgstr ""
+
+#: admin/options.php:962
+msgid "One Page Website"
+msgstr ""
+
+#: admin/options.php:963
+msgid ""
+"When you turn this option on, your frontpage will automatically retrieve "
+"page content from primary menu."
+msgstr ""
+
+#: admin/options.php:969
+msgid "Page Zooming on Mobile"
+msgstr ""
+
+#: admin/options.php:970
+msgid "Allow the user to zoom in and out of a page."
+msgstr ""
+
+#: admin/options.php:976
+msgid "Animation on Mobile"
+msgstr ""
+
+#: admin/options.php:977
+msgid "Turn on this option to enable animation on mobile."
+msgstr ""
+
+#: admin/options.php:983
+msgid "Open Graph Support"
+msgstr ""
+
+#: admin/options.php:984
+msgid ""
+"Turn on to enable any web page on your website to become a rich object in a "
+"social graph."
+msgstr ""
+
+#: admin/options.php:990
+msgid "Smooth Scrolling"
+msgstr ""
+
+#: admin/options.php:991
+msgid "Enable a smooth scrolling."
+msgstr ""
+
+#: admin/options.php:997
+msgid "Preload Images"
+msgstr ""
+
+#: admin/options.php:998
+msgid ""
+"Preloading images definitely helps users enjoy a better experience when "
+"viewing your content."
+msgstr ""
+
+#: admin/options.php:1004
+msgid "Page Loader"
+msgstr ""
+
+#: admin/options.php:1005
+msgid "Select a page loader animation."
+msgstr ""
+
+#: admin/options.php:1020
+msgid "Back To Top Button"
+msgstr ""
+
+#: admin/options.php:1021
+msgid "Enable a back to top button on your pages."
+msgstr ""
+
+#: admin/options.php:1027
+msgid "Allow Comments"
+msgstr ""
+
+#: admin/options.php:1028
+msgid "Allow comments on regular pages."
+msgstr ""
+
+#: admin/options.php:1034
+msgid "AJAX Options"
+msgstr ""
+
+#: admin/options.php:1035
+msgid "Turn on or off the AJAX page features."
+msgstr ""
+
+#: admin/options.php:1041
+msgid "Ajax Page Transitions"
+msgstr ""
+
+#: admin/options.php:1042
+msgid "Enable ajax page transitions."
+msgstr ""
+
+#: admin/options.php:1049
+msgid "Transition Effect"
+msgstr ""
+
+#: admin/options.php:1050
+msgid "Select a page transition effect."
+msgstr ""
+
+#: admin/options.php:1065
+msgid "Excluded URLs"
+msgstr ""
+
+#: admin/options.php:1066
+msgid ""
+"Excludes the specific links from AJAX Page Loader. This option allows you to "
+"exclude the page which contain some plugins that's conflict with the AJAX "
+"Loader. E.g. /shop/, /cart/, /checkout/, /gallery/, etc."
+msgstr ""
+
+#: admin/options.php:1067
+msgid "Add New"
+msgstr ""
+
+#: admin/options.php:1084 admin/options.php:1090
+msgid "Blog"
+msgstr ""
+
+#: admin/options.php:1091
+msgid "Customize blog page for the assigned Posts page in Settings > Reading."
+msgstr ""
+
+#: admin/options.php:1097 inc/metaboxes/options.php:141
+msgid "Page Title"
+msgstr ""
+
+#: admin/options.php:1098
+msgid "This text will display in the page title of the assigned blog page."
+msgstr ""
+
+#: admin/options.php:1104 admin/options.php:1161 admin/options.php:1304
+#: admin/options.php:1453 inc/metaboxes/options.php:26
+msgid "Sidebar"
+msgstr ""
+
+#: admin/options.php:1105
+msgid "Select blog page sidebar position."
+msgstr ""
+
+#: admin/options.php:1117 shortcodes/classes/blog-posts.php:49
+msgid "Select blog posts view."
+msgstr ""
+
+#: admin/options.php:1129
+msgid "Masonry Columns"
+msgstr ""
+
+#: admin/options.php:1130 shortcodes/classes/portfolio-grid.php:61
+#: shortcodes/classes/posts-grid.php:62
+msgid "Select the number of grid columns."
+msgstr ""
+
+#: admin/options.php:1142 shortcodes/classes/blog-posts.php:72
+msgid "Pagination Type"
+msgstr ""
+
+#: admin/options.php:1143 shortcodes/classes/blog-posts.php:80
+msgid "Select the pagination type for blog page."
+msgstr ""
+
+#: admin/options.php:1154
+msgid "Blog Single Post"
+msgstr ""
+
+#: admin/options.php:1155
+msgid "Customize blog single post."
+msgstr ""
+
+#: admin/options.php:1162
+msgid "Select blog single post sidebar position."
+msgstr ""
+
+#: admin/options.php:1173
+msgid "Post Tags"
+msgstr ""
+
+#: admin/options.php:1174
+msgid "Display post tags."
+msgstr ""
+
+#: admin/options.php:1180
+msgid "Author Box"
+msgstr ""
+
+#: admin/options.php:1181
+msgid "Display author description box."
+msgstr ""
+
+#: admin/options.php:1187 admin/options.php:1328
+msgid "Post Navigation"
+msgstr ""
+
+#: admin/options.php:1188 admin/options.php:1329
+msgid "Display next and previous posts."
+msgstr ""
+
+#: admin/options.php:1194 comments.php:11
+msgid "Comments"
+msgstr ""
+
+#: admin/options.php:1195
+msgid "Display comments box."
+msgstr ""
+
+#: admin/options.php:1201 admin/options.php:1351
+msgid "Related Posts"
+msgstr ""
+
+#: admin/options.php:1202 admin/options.php:1352
+msgid "Display related posts."
+msgstr ""
+
+#: admin/options.php:1209 admin/options.php:1359
+msgid "Related Posts Title"
+msgstr ""
+
+#: admin/options.php:1210 admin/options.php:1360
+msgid "The title of related posts box."
+msgstr ""
+
+#: admin/options.php:1217 admin/options.php:1367
+msgid "Number of related posts"
+msgstr ""
+
+#: admin/options.php:1218 admin/options.php:1368
+msgid "Select the number of posts to show in related posts."
+msgstr ""
+
+#: admin/options.php:1237
+msgid "Blog Meta"
+msgstr ""
+
+#: admin/options.php:1238
+msgid "Customize blog meta data options."
+msgstr ""
+
+#: admin/options.php:1244
+msgid "Blog Author Name"
+msgstr ""
+
+#: admin/options.php:1245
+msgid "Display blog author meta data."
+msgstr ""
+
+#: admin/options.php:1251
+msgid "Post Date"
+msgstr ""
+
+#: admin/options.php:1252
+msgid "Display blog post date."
+msgstr ""
+
+#: admin/options.php:1258
+msgid "Post Time"
+msgstr ""
+
+#: admin/options.php:1259
+msgid "Display blog post time."
+msgstr ""
+
+#: admin/options.php:1265
+msgid "Category"
+msgstr ""
+
+#: admin/options.php:1266
+msgid "Display blog meta category."
+msgstr ""
+
+#: admin/options.php:1272
+msgid "Comment"
+msgstr ""
+
+#: admin/options.php:1273
+msgid "Display blog meta comment."
+msgstr ""
+
+#: admin/options.php:1279
+msgid "Social Sharing Icons"
+msgstr ""
+
+#: admin/options.php:1280
+msgid "Display blog social sharing icons."
+msgstr ""
+
+#: admin/options.php:1291
+msgid "Portfolio"
+msgstr ""
+
+#: admin/options.php:1297
+msgid "Portfolio Slug"
+msgstr ""
+
+#: admin/options.php:1298
+msgid ""
+"Change/Rewrite the permalink when you use the permalink type as %postname%."
+msgstr ""
+
+#: admin/options.php:1305
+msgid "Select portfolio single post sidebar position."
+msgstr ""
+
+#: admin/options.php:1316
+msgid "Lightbox Image Size"
+msgstr ""
+
+#: admin/options.php:1317
+msgid "Select portfolio lightbox image size."
+msgstr ""
+
+#: admin/options.php:1336
+msgid "Home Button"
+msgstr ""
+
+#: admin/options.php:1337
+msgid "Display the \"Home\" button on portfolio single post."
+msgstr ""
+
+#: admin/options.php:1344
+msgid "Portfolio Home Page"
+msgstr ""
+
+#: admin/options.php:1345
+msgid ""
+"The portfolio home page URL for the \"Home\" button on portfolio single post."
+msgstr ""
+
+#: admin/options.php:1390
+msgid "WooCommerce"
+msgstr ""
+
+#: admin/options.php:1396
+msgid "Number of Products per Page"
+msgstr ""
+
+#: admin/options.php:1397
+msgid "Enter the number of products per page."
+msgstr ""
+
+#: admin/options.php:1405
+msgid "Single Product"
+msgstr ""
+
+#: admin/options.php:1406
+msgid "Customize shop single product."
+msgstr ""
+
+#: admin/options.php:1412
+msgid "Shop Single Sidebar"
+msgstr ""
+
+#: admin/options.php:1413
+msgid "Select shop single product sidebar position."
+msgstr ""
+
+#: admin/options.php:1424
+msgid "Number of Related Products"
+msgstr ""
+
+#: admin/options.php:1425
+msgid "Select the number of related products."
+msgstr ""
+
+#: admin/options.php:1447 page-title.php:129
+msgid "Search"
+msgstr ""
+
+#: admin/options.php:1454
+msgid "Select search page sidebar position."
+msgstr ""
+
+#: admin/options.php:1465
+msgid "Number of Search Results Per Page"
+msgstr ""
+
+#: admin/options.php:1466
+msgid "Enter the number of search results per page."
+msgstr ""
+
+#: admin/options.php:1474
+msgid "Show Featured Image."
+msgstr ""
+
+#: admin/options.php:1475
+msgid "Display featured images in search results."
+msgstr ""
+
+#: admin/options.php:1481
+msgid "Show Post Date."
+msgstr ""
+
+#: admin/options.php:1482
+msgid "Display post date in search results."
+msgstr ""
+
+#: admin/options.php:1488
+msgid "Show Author."
+msgstr ""
+
+#: admin/options.php:1489
+msgid "Display post author in search results."
+msgstr ""
+
+#: admin/options.php:1495
+msgid "Ajax Search"
+msgstr ""
+
+#: admin/options.php:1496
+msgid "Enable ajax auto suggest search."
+msgstr ""
+
+#: admin/options.php:1508
+msgid "Post Types"
+msgstr ""
+
+#: admin/options.php:1509
+msgid "Select post types for ajax auto suggest search."
+msgstr ""
+
+#: admin/options.php:1521
+msgid "Number of Suggestion Items."
+msgstr ""
+
+#: admin/options.php:1522
+msgid "Enter the number of search suggestion items per post type."
+msgstr ""
+
+#: admin/options.php:1556
+msgid "Social Media"
+msgstr ""
+
+#: admin/options.php:1563
+msgid "Typography"
+msgstr ""
+
+#: admin/options.php:1564
+msgid "Customize font options for your site."
+msgstr ""
+
+#: admin/options.php:1570
+msgid "Font options for main body text."
+msgstr ""
+
+#: admin/options.php:1592
+msgid "Font options for main navigation menu."
+msgstr ""
+
+#: admin/options.php:1616
+msgid "Font options for H1."
+msgstr ""
+
+#: admin/options.php:1637
+msgid "Font options for H2."
+msgstr ""
+
+#: admin/options.php:1658
+msgid "Font options for H3."
+msgstr ""
+
+#: admin/options.php:1678
+msgid "Title Text"
+msgstr ""
+
+#: admin/options.php:1679
+msgid ""
+"Font options for title text in visual composer elements, revolution slider "
+"and shortcodes in your website."
+msgstr ""
+
+#: admin/options.php:1715
+msgid ""
+"Enter your Google Maps API key, <a href=\"https://developers.google.com/maps/"
+"documentation/javascript/get-api-key#key\" target=\"_blank\">Get an API key</"
+"a>"
+msgstr ""
+
+#: admin/options.php:1725
+msgid "Advanced"
+msgstr ""
+
+#: admin/options.php:1731
+msgid "Head Content"
+msgstr ""
+
+#: admin/options.php:1732
+msgid ""
+"Enter HTML/JavaScript/StyleSheet code that insert into the head tag. You can "
+"also add a Google Analytics code, Google Verification code or custom Meta "
+"HTTP Content here."
+msgstr ""
+
+#: admin/options.php:1739
+msgid "Body Content"
+msgstr ""
+
+#: admin/options.php:1740
+msgid ""
+"Enter HTML/JavaScript/StyleSheet code that insert into the body tag. This "
+"will be added into the footer template of your theme."
+msgstr ""
+
+#: admin/options.php:1749
+msgid "Import / Export"
+msgstr ""
+
+#: admin/options.php:1750
+msgid "Import and Export your Redux Framework settings from file, text or URL."
+msgstr ""
+
+#: admin/options.php:1768
+msgid "Customize"
+msgstr ""
+
+#: admin/options.php:1781 inc/custom-functions.php:448
+msgid "By"
+msgstr ""
+
+#: admin/options.php:1782
+msgid "Version"
+msgstr ""
+
+#: admin/options.php:1784
+msgid "Tags"
+msgstr ""
+
+#: admin/options.php:1787
+msgid ""
+"This <a href=\"http://codex.wordpress.org/Child_Themes\">child theme</a> "
+"requires its parent theme"
+msgstr ""
+
+#: admin/options.php:1802
+msgid "Theme Information"
+msgstr ""
+
+#: admin/options.php:1803
+msgid "For more information and features about this theme, please visit"
+msgstr ""
+
+#: admin/options.php:1825 admin/options.php:1827
+msgid "Theme Options"
+msgstr ""
+
+#: author.php:22
+#, php-format
+msgid "%s has created %s entries."
+msgstr ""
+
+#: author.php:35 inc/custom-functions.php:544
+msgid "About"
+msgstr ""
+
+#: author.php:37 inc/custom-functions.php:546
+msgid "Edit Profile"
+msgstr ""
+
+#: author.php:44
+msgid "Entries By"
+msgstr ""
+
+#: comments.php:5
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:11
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:11
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:48
+msgid "Name"
+msgstr ""
+
+#: comments.php:48 comments.php:50
+msgid "Required"
+msgstr ""
+
+#: comments.php:50 shortcodes/templates/team_slider.php:79
+msgid "Email"
+msgstr ""
+
+#: comments.php:52 inc/metaboxes/options.php:572 inc/metaboxes/options.php:621
+#: shortcodes/templates/team_slider.php:82 single-portfolio.php:124
+msgid "Website"
+msgstr ""
+
+#: comments.php:59
+msgid "Post A Comment"
+msgstr ""
+
+#: comments.php:60
+msgid "Leave A Reply"
+msgstr ""
+
+#: comments.php:61
+#, php-format
+msgid "You must be %slogged in%s to post a comment."
+msgstr ""
+
+#: comments.php:62
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:62
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:62
+msgid "Log out"
+msgstr ""
+
+#: comments.php:65
+msgid "Comment..."
+msgstr ""
+
+#: comments.php:67
+msgid "Post Comment"
+msgstr ""
+
+#: content-audio.php:77 content-gallery.php:106 content-link.php:57
+#: content-quote.php:54 content-video.php:78 content.php:56
+msgid "Read More"
+msgstr ""
+
+#: functions.php:344
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:458
+msgid "Enter the customer's name here"
+msgstr ""
+
+#: functions.php:461
+msgid "Enter the member's name here"
+msgstr ""
+
+#: functions.php:559
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: functions.php:560
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:561
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:562
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:623
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:624
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:625
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: functions.php:626
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: functions.php:627
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: functions.php:628
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions.php:629
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/custom-functions.php:453
+msgid "In"
+msgstr ""
+
+#: inc/custom-functions.php:538
+#, php-format
+msgid "%s has created <a href=\"%s\">%s entries</a>."
+msgstr ""
+
+#: inc/custom-functions.php:640
+msgid "Newer Entries"
+msgstr ""
+
+#: inc/custom-functions.php:643
+msgid "Older Entries"
+msgstr ""
+
+#: inc/custom-functions.php:720
+msgid "Show More"
+msgstr ""
+
+#: inc/custom-functions.php:743 inc/custom-functions.php:891
+msgid "Previous Post"
+msgstr ""
+
+#: inc/custom-functions.php:755 inc/custom-functions.php:903
+msgid "Next Post"
+msgstr ""
+
+#: inc/custom-functions.php:774
+msgid "Edit"
+msgstr ""
+
+#: inc/custom-functions.php:774
+msgid "Reply"
+msgstr ""
+
+#: inc/custom-functions.php:777
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/metaboxes/options.php:18
+msgid "Single Post Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:27
+msgid ""
+"Check this to customize the sidebar for this post or uncheck to use default "
+"settings from theme options."
+msgstr ""
+
+#: inc/metaboxes/options.php:32 inc/metaboxes/options.php:363
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/metaboxes/options.php:33 inc/metaboxes/options.php:364
+msgid "Select sidebar position."
+msgstr ""
+
+#: inc/metaboxes/options.php:44
+msgid "Title Area"
+msgstr ""
+
+#: inc/metaboxes/options.php:45
+msgid "Check this to customize the title area for this post."
+msgstr ""
+
+#: inc/metaboxes/options.php:58
+msgid "Header Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:67
+msgid "Show or hide the header."
+msgstr ""
+
+#: inc/metaboxes/options.php:105
+msgid "Slider Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:113
+msgid "Show Slider"
+msgstr ""
+
+#: inc/metaboxes/options.php:114
+msgid "Show the slider at top of the content."
+msgstr ""
+
+#: inc/metaboxes/options.php:119
+msgid "Select Slider Item"
+msgstr ""
+
+#: inc/metaboxes/options.php:120
+msgid "Select a slider item to display."
+msgstr ""
+
+#: inc/metaboxes/options.php:132
+msgid "Title Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:142
+msgid "Show or Hide the page title."
+msgstr ""
+
+#: inc/metaboxes/options.php:166
+msgid "Title Background"
+msgstr ""
+
+#: inc/metaboxes/options.php:167
+msgid "Select a background type for the title."
+msgstr ""
+
+#: inc/metaboxes/options.php:181 inc/metaboxes/options.php:295
+msgid "Upload an MPEG video or enter a URL."
+msgstr ""
+
+#: inc/metaboxes/options.php:187 inc/metaboxes/options.php:301
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: inc/metaboxes/options.php:193 inc/metaboxes/options.php:307
+msgid "Choose a background color."
+msgstr ""
+
+#: inc/metaboxes/options.php:199 inc/metaboxes/options.php:313
+msgid "Background Size"
+msgstr ""
+
+#: inc/metaboxes/options.php:200 inc/metaboxes/options.php:314
+msgid ""
+"For full width background, choose Cover. For repeating background, choose "
+"Auto."
+msgstr ""
+
+#: inc/metaboxes/options.php:210 inc/metaboxes/options.php:343
+msgid "Parallax"
+msgstr ""
+
+#: inc/metaboxes/options.php:272
+msgid "Background Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:281
+msgid "Select a background type for this page."
+msgstr ""
+
+#: inc/metaboxes/options.php:355
+msgid "Sidebar Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:380
+msgid "Media Embed Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:388
+msgid ""
+"You can enter media URL from any major video and audio hosting service "
+"(Youtube, Vimeo, DailyMotion, SoundCloud, Mixcloud, WordPress.tv, etc.). "
+"Supports services listed at <a href=\"http://codex.wordpress.org/Embeds\" "
+"target=\"_blank\">http://codex.wordpress.org/Embeds</a>"
+msgstr ""
+
+#: inc/metaboxes/options.php:394
+msgid "Media URL"
+msgstr ""
+
+#: inc/metaboxes/options.php:395
+msgid "Enter a media URL."
+msgstr ""
+
+#: inc/metaboxes/options.php:404
+msgid "Gallery Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:413 shortcodes/class-shortcodes.php:2269
+#: shortcodes/classes/clients-carousel.php:27
+msgid "Images"
+msgstr ""
+
+#: inc/metaboxes/options.php:414 shortcodes/classes/clients-carousel.php:30
+msgid "Upload or select images from media library."
+msgstr ""
+
+#: inc/metaboxes/options.php:428
+msgid "Link Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:436
+msgid "You can enter external or internal URL. For Post Link Format only."
+msgstr ""
+
+#: inc/metaboxes/options.php:442
+msgid "Post URL"
+msgstr ""
+
+#: inc/metaboxes/options.php:443
+msgid "Enter a post URL."
+msgstr ""
+
+#: inc/metaboxes/options.php:452
+msgid "Quote Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:460
+msgid "Quote"
+msgstr ""
+
+#: inc/metaboxes/options.php:461
+msgid "Enter quote here."
+msgstr ""
+
+#: inc/metaboxes/options.php:466
+msgid "Author"
+msgstr ""
+
+#: inc/metaboxes/options.php:467
+msgid "Enter quote's author."
+msgstr ""
+
+#: inc/metaboxes/options.php:480
+msgid "Portfolio Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:489
+msgid "Select portfolio layout."
+msgstr ""
+
+#: inc/metaboxes/options.php:500
+msgid "Project URL"
+msgstr ""
+
+#: inc/metaboxes/options.php:501
+msgid "Enter a project URL."
+msgstr ""
+
+#: inc/metaboxes/options.php:510
+msgid "Client Information"
+msgstr ""
+
+#: inc/metaboxes/options.php:544
+msgid "Customer Information"
+msgstr ""
+
+#: inc/metaboxes/options.php:552 inc/metaboxes/options.php:603
+#: shortcodes/class-shortcodes.php:1922
+msgid "Image"
+msgstr ""
+
+#: inc/metaboxes/options.php:553
+msgid "Customer's image."
+msgstr ""
+
+#: inc/metaboxes/options.php:558 inc/metaboxes/options.php:609
+msgid "Job Position"
+msgstr ""
+
+#: inc/metaboxes/options.php:559
+msgid "Enter a customer's job position."
+msgstr ""
+
+#: inc/metaboxes/options.php:565
+msgid "Company"
+msgstr ""
+
+#: inc/metaboxes/options.php:566
+msgid "Enter a company name."
+msgstr ""
+
+#: inc/metaboxes/options.php:573
+msgid "Enter a URL that applies to this customer or company."
+msgstr ""
+
+#: inc/metaboxes/options.php:595
+msgid "Member Information"
+msgstr ""
+
+#: inc/metaboxes/options.php:604
+msgid "Member's image."
+msgstr ""
+
+#: inc/metaboxes/options.php:610
+msgid "Enter a member's job position."
+msgstr ""
+
+#: inc/metaboxes/options.php:615
+msgid "Email Address"
+msgstr ""
+
+#: inc/metaboxes/options.php:616
+msgid "Enter a member's contact email address."
+msgstr ""
+
+#: inc/metaboxes/options.php:622
+msgid "Enter a URL that applies to this member."
+msgstr ""
+
+#: inc/metaboxes/options.php:628
+msgid "Social Networks"
+msgstr ""
+
+#: inc/metaboxes/options.php:630
+msgid "Social {#}"
+msgstr ""
+
+#: inc/metaboxes/options.php:631
+msgid "Add Another Social URL"
+msgstr ""
+
+#: inc/metaboxes/options.php:632
+msgid "Remove Social"
+msgstr ""
+
+#: inc/metaboxes/options.php:639
+msgid "Select a social networking websites."
+msgstr ""
+
+#: inc/metaboxes/options.php:645
+msgid "Enter member's profile URL or personal page."
+msgstr ""
+
+#: inc/metaboxes/options.php:658
+msgid "Footer Options"
+msgstr ""
+
+#: inc/metaboxes/options.php:667
+msgid "Show or hide the footer."
+msgstr ""
+
+#: inc/woocommerce.php:84
+msgid "Cart"
+msgstr ""
+
+#: inc/woocommerce.php:84
+msgid "Total"
+msgstr ""
+
+#: page-title.php:133
+msgid "Error 404 Page"
+msgstr ""
+
+#: page-title.php:138
+msgid "Daily Archives"
+msgstr ""
+
+#: page-title.php:140
+msgid "Monthly Archives"
+msgstr ""
+
+#: page-title.php:142
+msgid "Yearly Archives"
+msgstr ""
+
+#: search.php:26
+msgid "Search Results for"
+msgstr ""
+
+#: search.php:70
+msgid "No result found."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:206 shortcodes/class-shortcodes.php:396
+msgid "Row"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:211 shortcodes/class-shortcodes.php:769
+#: shortcodes/class-shortcodes.php:861 shortcodes/class-shortcodes.php:1046
+#: shortcodes/class-shortcodes.php:1139 shortcodes/class-shortcodes.php:1346
+#: shortcodes/class-shortcodes.php:1420 shortcodes/class-shortcodes.php:1485
+#: shortcodes/class-shortcodes.php:1665 shortcodes/class-shortcodes.php:1739
+#: shortcodes/class-shortcodes.php:1899 shortcodes/class-shortcodes.php:2146
+#: shortcodes/class-shortcodes.php:2208 shortcodes/classes/info-box.php:29
+msgid "Content"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:212 shortcodes/class-shortcodes.php:403
+msgid "Place content elements inside the row"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:217
+msgid "Content Width"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:224
+msgid "Select Full Width to stretch content to full the browser width."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:229
+msgid "Content Height"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:236
+msgid "Select Full Screen to create a Full screen section (Full Height)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:247 shortcodes/class-shortcodes.php:414
+#: shortcodes/class-shortcodes.php:562 shortcodes/class-shortcodes.php:673
+msgid "Select dark or light text color."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:259 shortcodes/class-shortcodes.php:426
+#: shortcodes/class-shortcodes.php:574 shortcodes/class-shortcodes.php:685
+msgid "Select dark or light background color."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:264
+msgid "Background Parallax"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:271
+msgid "Select parallax to enable parallax background scrolling."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:305 shortcodes/class-shortcodes.php:460
+msgid "Select content mask position."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:320 shortcodes/class-shortcodes.php:475
+msgid "Mask Style"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:345 shortcodes/class-shortcodes.php:500
+msgid "Content Vertical Alignment"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:352 shortcodes/class-shortcodes.php:507
+msgid "Select content vertical alignment."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:357 shortcodes/class-shortcodes.php:512
+#: shortcodes/class-shortcodes.php:591 shortcodes/class-shortcodes.php:702
+msgid "Padding Size"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:367 shortcodes/class-shortcodes.php:522
+#: shortcodes/class-shortcodes.php:601 shortcodes/class-shortcodes.php:712
+msgid "Select padding size."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:371
+msgid "Row ID"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:373
+#, php-format
+msgid ""
+"Enter row ID (Note: make sure it is unique and valid according to <a href="
+"\"%s\" target=\"_blank\">W3C specification</a>)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:378 shortcodes/class-shortcodes.php:527
+#: shortcodes/class-shortcodes.php:606 shortcodes/class-shortcodes.php:717
+#: shortcodes/class-shortcodes.php:801 shortcodes/class-shortcodes.php:847
+#: shortcodes/class-shortcodes.php:1031 shortcodes/class-shortcodes.php:1123
+#: shortcodes/class-shortcodes.php:1330 shortcodes/class-shortcodes.php:1405
+#: shortcodes/class-shortcodes.php:1465 shortcodes/class-shortcodes.php:1718
+#: shortcodes/class-shortcodes.php:2121 shortcodes/class-shortcodes.php:2187
+#: shortcodes/class-shortcodes.php:2347 shortcodes/classes/blog-posts.php:126
+#: shortcodes/classes/button.php:83 shortcodes/classes/clients-carousel.php:115
+#: shortcodes/classes/counter-box.php:156
+#: shortcodes/classes/donut-chart.php:226 shortcodes/classes/gmaps.php:45
+#: shortcodes/classes/half-donut-chart.php:232
+#: shortcodes/classes/heading.php:75 shortcodes/classes/icon-block.php:185
+#: shortcodes/classes/info-box.php:196 shortcodes/classes/link-button.php:180
+#: shortcodes/classes/portfolio-grid.php:145
+#: shortcodes/classes/posts-grid.php:112
+#: shortcodes/classes/posts-slider.php:104
+#: shortcodes/classes/pricing-box.php:121
+#: shortcodes/classes/team-slider.php:114
+#: shortcodes/classes/testimonials-slider.php:104
+msgid "Extra CSS Class"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:381 shortcodes/class-shortcodes.php:530
+#: shortcodes/class-shortcodes.php:609 shortcodes/class-shortcodes.php:720
+#: shortcodes/class-shortcodes.php:804 shortcodes/class-shortcodes.php:850
+#: shortcodes/class-shortcodes.php:1034 shortcodes/class-shortcodes.php:1126
+#: shortcodes/class-shortcodes.php:1333 shortcodes/class-shortcodes.php:1408
+#: shortcodes/class-shortcodes.php:1468 shortcodes/class-shortcodes.php:1721
+#: shortcodes/class-shortcodes.php:2123 shortcodes/class-shortcodes.php:2190
+#: shortcodes/class-shortcodes.php:2350 shortcodes/classes/blog-posts.php:129
+#: shortcodes/classes/button.php:86 shortcodes/classes/clients-carousel.php:118
+#: shortcodes/classes/counter-box.php:159
+#: shortcodes/classes/donut-chart.php:229 shortcodes/classes/gmaps.php:47
+#: shortcodes/classes/half-donut-chart.php:235
+#: shortcodes/classes/heading.php:78 shortcodes/classes/icon-block.php:188
+#: shortcodes/classes/info-box.php:199 shortcodes/classes/link-button.php:183
+#: shortcodes/classes/portfolio-grid.php:148
+#: shortcodes/classes/posts-grid.php:115
+#: shortcodes/classes/posts-slider.php:107
+#: shortcodes/classes/pricing-box.php:124
+#: shortcodes/classes/team-slider.php:117
+#: shortcodes/classes/testimonials-slider.php:107
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:385 shortcodes/class-shortcodes.php:534
+#: shortcodes/class-shortcodes.php:642 shortcodes/class-shortcodes.php:753
+#: shortcodes/class-shortcodes.php:2127 shortcodes/class-shortcodes.php:2194
+#: shortcodes/classes/donut-chart.php:233
+#: shortcodes/classes/half-donut-chart.php:239
+#: shortcodes/classes/icon-block.php:192 shortcodes/classes/info-box.php:203
+msgid "Css"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:387 shortcodes/class-shortcodes.php:536
+#: shortcodes/class-shortcodes.php:644 shortcodes/class-shortcodes.php:755
+#: shortcodes/class-shortcodes.php:2129 shortcodes/class-shortcodes.php:2196
+#: shortcodes/classes/donut-chart.php:235
+#: shortcodes/classes/half-donut-chart.php:241
+#: shortcodes/classes/icon-block.php:194 shortcodes/classes/info-box.php:205
+msgid "Design options"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:548 shortcodes/class-shortcodes.php:654
+msgid "Column"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:579 shortcodes/class-shortcodes.php:690
+msgid "Text Alignment"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:586 shortcodes/class-shortcodes.php:697
+msgid "Select text alignment."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:613 shortcodes/class-shortcodes.php:724
+msgid "Width"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:616 shortcodes/class-shortcodes.php:727
+msgid "1 column - 1/12"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:617 shortcodes/class-shortcodes.php:728
+msgid "2 columns - 1/6"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:618 shortcodes/class-shortcodes.php:729
+msgid "3 columns - 1/4"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:619 shortcodes/class-shortcodes.php:730
+msgid "4 columns - 1/3"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:620 shortcodes/class-shortcodes.php:731
+msgid "5 columns - 5/12"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:621 shortcodes/class-shortcodes.php:732
+msgid "6 columns - 1/2"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:622 shortcodes/class-shortcodes.php:733
+msgid "7 columns - 7/12"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:623 shortcodes/class-shortcodes.php:734
+msgid "8 columns - 2/3"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:624 shortcodes/class-shortcodes.php:735
+msgid "9 columns - 3/4"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:625 shortcodes/class-shortcodes.php:736
+msgid "10 columns - 5/6"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:626 shortcodes/class-shortcodes.php:737
+msgid "11 columns - 11/12"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:627 shortcodes/class-shortcodes.php:738
+msgid "12 columns - 1/1"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:629 shortcodes/class-shortcodes.php:637
+#: shortcodes/class-shortcodes.php:740 shortcodes/class-shortcodes.php:748
+msgid "Responsive Options"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:630 shortcodes/class-shortcodes.php:741
+msgid "Select column width."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:635 shortcodes/class-shortcodes.php:746
+msgid "Responsiveness"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:638 shortcodes/class-shortcodes.php:749
+msgid ""
+"Adjust column for different screen sizes. Control width, offset and "
+"visibility settings."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:765
+msgid "Text Block"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:770
+msgid "A block of text with WYSIWYG editor"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:775 shortcodes/class-shortcodes.php:1052
+msgid "Text"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:777
+msgid ""
+"<p>I am text block. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo.</p>"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:782 shortcodes/class-shortcodes.php:826
+#: shortcodes/class-shortcodes.php:1104 shortcodes/class-shortcodes.php:1311
+#: shortcodes/class-shortcodes.php:1699 shortcodes/class-shortcodes.php:2103
+#: shortcodes/classes/blog-posts.php:107 shortcodes/classes/button.php:64
+#: shortcodes/classes/clients-carousel.php:96
+#: shortcodes/classes/counter-box.php:137
+#: shortcodes/classes/donut-chart.php:207
+#: shortcodes/classes/half-donut-chart.php:213
+#: shortcodes/classes/heading.php:56 shortcodes/classes/icon-block.php:166
+#: shortcodes/classes/info-box.php:177 shortcodes/classes/link-button.php:161
+#: shortcodes/classes/portfolio-grid.php:126
+#: shortcodes/classes/posts-grid.php:93 shortcodes/classes/posts-slider.php:85
+#: shortcodes/classes/pricing-box.php:102 shortcodes/classes/team-slider.php:95
+#: shortcodes/classes/testimonials-slider.php:85
+msgid "Animation"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:784 shortcodes/class-shortcodes.php:828
+#: shortcodes/class-shortcodes.php:1106 shortcodes/class-shortcodes.php:1313
+#: shortcodes/class-shortcodes.php:1701 shortcodes/class-shortcodes.php:2105
+#: shortcodes/classes/blog-posts.php:109 shortcodes/classes/button.php:66
+#: shortcodes/classes/clients-carousel.php:98
+#: shortcodes/classes/counter-box.php:139
+#: shortcodes/classes/donut-chart.php:209
+#: shortcodes/classes/half-donut-chart.php:215
+#: shortcodes/classes/heading.php:58 shortcodes/classes/icon-block.php:168
+#: shortcodes/classes/info-box.php:179 shortcodes/classes/link-button.php:163
+#: shortcodes/classes/portfolio-grid.php:128
+#: shortcodes/classes/posts-grid.php:95 shortcodes/classes/posts-slider.php:87
+#: shortcodes/classes/pricing-box.php:104 shortcodes/classes/team-slider.php:97
+#: shortcodes/classes/testimonials-slider.php:87
+msgid "Select a CSS3 Animation that applies to this element."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:789 shortcodes/class-shortcodes.php:834
+#: shortcodes/class-shortcodes.php:1111 shortcodes/class-shortcodes.php:1318
+#: shortcodes/class-shortcodes.php:1706 shortcodes/class-shortcodes.php:2110
+#: shortcodes/classes/blog-posts.php:114 shortcodes/classes/button.php:71
+#: shortcodes/classes/clients-carousel.php:103
+#: shortcodes/classes/counter-box.php:144
+#: shortcodes/classes/donut-chart.php:214
+#: shortcodes/classes/half-donut-chart.php:220
+#: shortcodes/classes/heading.php:63 shortcodes/classes/icon-block.php:173
+#: shortcodes/classes/info-box.php:184 shortcodes/classes/link-button.php:168
+#: shortcodes/classes/portfolio-grid.php:133
+#: shortcodes/classes/posts-grid.php:100 shortcodes/classes/posts-slider.php:92
+#: shortcodes/classes/pricing-box.php:109
+#: shortcodes/classes/team-slider.php:102
+#: shortcodes/classes/testimonials-slider.php:92
+msgid "Animation Delay"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:792 shortcodes/class-shortcodes.php:837
+#: shortcodes/class-shortcodes.php:1114 shortcodes/class-shortcodes.php:1321
+#: shortcodes/class-shortcodes.php:1709 shortcodes/class-shortcodes.php:2113
+#: shortcodes/classes/blog-posts.php:117 shortcodes/classes/button.php:74
+#: shortcodes/classes/clients-carousel.php:106
+#: shortcodes/classes/counter-box.php:147
+#: shortcodes/classes/donut-chart.php:217
+#: shortcodes/classes/half-donut-chart.php:223
+#: shortcodes/classes/heading.php:66 shortcodes/classes/icon-block.php:176
+#: shortcodes/classes/info-box.php:187 shortcodes/classes/link-button.php:171
+#: shortcodes/classes/portfolio-grid.php:136
+#: shortcodes/classes/posts-grid.php:103 shortcodes/classes/posts-slider.php:95
+#: shortcodes/classes/pricing-box.php:112
+#: shortcodes/classes/team-slider.php:105
+#: shortcodes/classes/testimonials-slider.php:95
+msgid ""
+"Defines when the animation will start (in seconds). Example: 0.5, 1, 2, ..."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:808 shortcodes/class-shortcodes.php:2354
+msgid "CSS box"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:811 shortcodes/class-shortcodes.php:2356
+msgid "Design Options"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:856
+msgid "Accordion"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:862
+msgid "Collapsible content panels"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:866 shortcodes/class-shortcodes.php:1490
+#: shortcodes/class-shortcodes.php:1904 shortcodes/class-shortcodes.php:2213
+msgid "Widget title"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:868 shortcodes/class-shortcodes.php:1492
+#: shortcodes/class-shortcodes.php:1906 shortcodes/class-shortcodes.php:2153
+#: shortcodes/class-shortcodes.php:2215
+msgid "Enter text used as widget title (Note: located above content element)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:872
+msgid "Active section"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:875
+msgid ""
+"Enter section number to be active on load or enter \"false\" to collapse all "
+"sections."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:879
+msgid "Allow collapse all sections?"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:881
+msgid "If checked, it is allowed to collapse all sections."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:882 shortcodes/class-shortcodes.php:889
+#: shortcodes/class-shortcodes.php:1986
+msgid "Yes"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:886
+msgid "Disable keyboard interactions?"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:888
+msgid ""
+"If checked, disables keyboard arrow interactions (Keys: Left, Up, Right, "
+"Down, Space)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:893 shortcodes/class-shortcodes.php:1504
+#: shortcodes/class-shortcodes.php:1753
+msgid "Extra class name"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:895 shortcodes/class-shortcodes.php:1506
+#: shortcodes/class-shortcodes.php:1755
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:903
+msgid "Add section"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:907
+msgid "Section 1"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:908
+msgid "Section 2"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:917
+msgid "Section"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:927
+msgid "Enter accordion section title."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:931 shortcodes/class-shortcodes.php:1200
+#: shortcodes/class-shortcodes.php:1554 shortcodes/classes/counter-box.php:27
+#: shortcodes/classes/donut-chart.php:59
+#: shortcodes/classes/half-donut-chart.php:67
+#: shortcodes/classes/icon-block.php:18 shortcodes/classes/info-box.php:36
+#: shortcodes/classes/link-button.php:33
+msgid "Icon Set"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:941 shortcodes/class-shortcodes.php:1210
+#: shortcodes/class-shortcodes.php:1564 shortcodes/classes/counter-box.php:37
+#: shortcodes/classes/donut-chart.php:69
+#: shortcodes/classes/half-donut-chart.php:77
+#: shortcodes/classes/icon-block.php:28 shortcodes/classes/info-box.php:46
+#: shortcodes/classes/link-button.php:43
+msgid "Select an icon set."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:945 shortcodes/class-shortcodes.php:960
+#: shortcodes/class-shortcodes.php:976 shortcodes/class-shortcodes.php:992
+#: shortcodes/class-shortcodes.php:1008 shortcodes/class-shortcodes.php:1214
+#: shortcodes/class-shortcodes.php:1229 shortcodes/class-shortcodes.php:1245
+#: shortcodes/class-shortcodes.php:1261 shortcodes/class-shortcodes.php:1277
+#: shortcodes/class-shortcodes.php:1572 shortcodes/class-shortcodes.php:1587
+#: shortcodes/class-shortcodes.php:1603 shortcodes/class-shortcodes.php:1619
+#: shortcodes/class-shortcodes.php:1635 shortcodes/classes/counter-box.php:41
+#: shortcodes/classes/counter-box.php:56 shortcodes/classes/counter-box.php:72
+#: shortcodes/classes/counter-box.php:88 shortcodes/classes/counter-box.php:104
+#: shortcodes/classes/donut-chart.php:77 shortcodes/classes/donut-chart.php:92
+#: shortcodes/classes/donut-chart.php:108
+#: shortcodes/classes/donut-chart.php:124
+#: shortcodes/classes/donut-chart.php:140 shortcodes/classes/gmaps.php:39
+#: shortcodes/classes/half-donut-chart.php:85
+#: shortcodes/classes/half-donut-chart.php:100
+#: shortcodes/classes/half-donut-chart.php:116
+#: shortcodes/classes/half-donut-chart.php:132
+#: shortcodes/classes/half-donut-chart.php:148
+#: shortcodes/classes/icon-block.php:32 shortcodes/classes/icon-block.php:47
+#: shortcodes/classes/icon-block.php:63 shortcodes/classes/icon-block.php:79
+#: shortcodes/classes/icon-block.php:95 shortcodes/classes/info-box.php:50
+#: shortcodes/classes/info-box.php:65 shortcodes/classes/info-box.php:81
+#: shortcodes/classes/info-box.php:97 shortcodes/classes/info-box.php:113
+#: shortcodes/classes/link-button.php:47 shortcodes/classes/link-button.php:62
+#: shortcodes/classes/link-button.php:78 shortcodes/classes/link-button.php:94
+#: shortcodes/classes/link-button.php:110
+msgid "Icon"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:952 shortcodes/class-shortcodes.php:968
+#: shortcodes/class-shortcodes.php:984 shortcodes/class-shortcodes.php:1000
+#: shortcodes/class-shortcodes.php:1016 shortcodes/class-shortcodes.php:1221
+#: shortcodes/class-shortcodes.php:1237 shortcodes/class-shortcodes.php:1253
+#: shortcodes/class-shortcodes.php:1269 shortcodes/class-shortcodes.php:1285
+#: shortcodes/class-shortcodes.php:1579 shortcodes/class-shortcodes.php:1595
+#: shortcodes/class-shortcodes.php:1611 shortcodes/class-shortcodes.php:1627
+#: shortcodes/class-shortcodes.php:1643 shortcodes/classes/counter-box.php:48
+#: shortcodes/classes/counter-box.php:64 shortcodes/classes/counter-box.php:80
+#: shortcodes/classes/counter-box.php:96 shortcodes/classes/counter-box.php:112
+#: shortcodes/classes/donut-chart.php:84 shortcodes/classes/donut-chart.php:100
+#: shortcodes/classes/donut-chart.php:116
+#: shortcodes/classes/donut-chart.php:132
+#: shortcodes/classes/donut-chart.php:148
+#: shortcodes/classes/half-donut-chart.php:92
+#: shortcodes/classes/half-donut-chart.php:108
+#: shortcodes/classes/half-donut-chart.php:124
+#: shortcodes/classes/half-donut-chart.php:140
+#: shortcodes/classes/half-donut-chart.php:156
+#: shortcodes/classes/icon-block.php:39 shortcodes/classes/icon-block.php:55
+#: shortcodes/classes/icon-block.php:71 shortcodes/classes/icon-block.php:87
+#: shortcodes/classes/icon-block.php:103 shortcodes/classes/info-box.php:57
+#: shortcodes/classes/info-box.php:73 shortcodes/classes/info-box.php:89
+#: shortcodes/classes/info-box.php:105 shortcodes/classes/info-box.php:121
+#: shortcodes/classes/link-button.php:54 shortcodes/classes/link-button.php:70
+#: shortcodes/classes/link-button.php:86 shortcodes/classes/link-button.php:102
+#: shortcodes/classes/link-button.php:118
+msgid "Select an icon."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1024
+msgid "Section ID"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1026
+#, php-format
+msgid ""
+"Enter optionally section ID. Make sure it is unique, and it is valid as w3c "
+"specification: %s (Must not have spaces)"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1026
+msgid "link"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1043
+msgid "Call to Action"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1047
+msgid "Catch visitors attention with CTA block"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1054
+msgid "Click edit button to change this text."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1055
+msgid "Enter text content."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1059 shortcodes/class-shortcodes.php:1061
+#: shortcodes/class-shortcodes.php:1193
+msgid "Text on the button"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1062
+msgid "Enter text on the button."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1066 shortcodes/class-shortcodes.php:1187
+#: shortcodes/classes/button.php:27 shortcodes/classes/link-button.php:27
+msgid "URL (Link)"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1068
+msgid "Enter button link."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1072
+msgid "Target"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1075 shortcodes/class-shortcodes.php:2092
+#: shortcodes/class-shortcodes.php:2340
+msgid "Same window"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1076 shortcodes/class-shortcodes.php:2093
+#: shortcodes/class-shortcodes.php:2341
+msgid "New window"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1086 shortcodes/class-shortcodes.php:1299
+msgid "Button position"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1089 shortcodes/class-shortcodes.php:1357
+#: shortcodes/class-shortcodes.php:1438 shortcodes/class-shortcodes.php:1998
+msgid "Right"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1090 shortcodes/class-shortcodes.php:1356
+#: shortcodes/class-shortcodes.php:1437 shortcodes/class-shortcodes.php:1997
+msgid "Left"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1091
+msgid "Bottom"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1093 shortcodes/class-shortcodes.php:1306
+msgid "Select button alignment."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1099 shortcodes/class-shortcodes.php:1295
+msgid ""
+"Select button background color. If empty \"Theme Color Scheme\" will be used."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1136
+msgid "Call to Action Block"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1140
+msgid "Catch visitors attention with call to action block"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1144
+msgid "Heading first line"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1148
+msgid "Text for the first heading line."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1152
+msgid "Heading second line"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1157
+msgid "Optional text for the second heading line."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1161
+msgid "Text align"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1169
+msgid "Text align in call to action block."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1173
+msgid "Custom Background Color"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1175
+msgid "Select background color for your element."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1181
+msgid "Promotional text"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1183
+msgid ""
+"I am promo text. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1189
+msgid "Button link."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1196 shortcodes/classes/button.php:23
+#: shortcodes/classes/link-button.php:23
+msgid "Text on the button."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1293
+msgid "Button Background Color"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1302
+msgid "Align right"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1303
+msgid "Align left"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1304
+msgid "Align bottom"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1342
+msgid "Separator"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1348
+msgid "Horizontal separator line"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1352
+msgid "Alignment"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1355 shortcodes/class-shortcodes.php:1436
+#: shortcodes/class-shortcodes.php:1999
+msgid "Center"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1359
+msgid "Select separator alignment."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1363 shortcodes/class-shortcodes.php:1450
+#: shortcodes/classes/button.php:34 shortcodes/classes/donut-chart.php:158
+#: shortcodes/classes/half-donut-chart.php:165
+#: shortcodes/classes/link-button.php:127
+msgid "Style"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1372 shortcodes/classes/heading.php:37
+msgid "Separator Style"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1376 shortcodes/class-shortcodes.php:1457
+msgid "Element width"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1390 shortcodes/class-shortcodes.php:1460
+msgid "Separator element width in percents."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1398 shortcodes/class-shortcodes.php:1444
+#: shortcodes/classes/donut-chart.php:178
+#: shortcodes/classes/half-donut-chart.php:185
+msgid "Border Color"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1400 shortcodes/classes/donut-chart.php:181
+#: shortcodes/classes/half-donut-chart.php:188
+msgid "Select border color."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1417
+msgid "Separator with Text"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1421
+msgid "Horizontal separator line with heading"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1429
+msgid "Add text to separator."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1433
+msgid "Title position"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1440
+msgid "Select title location."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1446
+msgid "Select border color. If empty \"Theme Color Scheme\" will be used."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1453
+msgid "Separator display style."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1480
+msgid "Tabs"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1486
+msgid "Tabbed content"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1496 shortcodes/class-shortcodes.php:2231
+msgid "Auto rotate"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1498 shortcodes/class-shortcodes.php:1747
+#: shortcodes/class-shortcodes.php:2233
+msgid "Disable"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1500
+msgid "Auto rotate tabs each X seconds."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1517 shortcodes/class-shortcodes.php:1766
+msgid "Tab 1"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1518 shortcodes/class-shortcodes.php:1767
+msgid "Tab 2"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1526
+msgid "Tab"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1534
+msgid "Navigation"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1540
+msgid "Select tab navigation mode."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1546
+msgid "Tab title."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1651
+msgid "Tab ID"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1662
+msgid "FAQ"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1666
+msgid "Toggle element for Q&A block"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1672 shortcodes/class-shortcodes.php:1674
+msgid "Toggle title"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1675
+msgid "Enter title of toggle block."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1681
+msgid "Toggle content"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1683
+msgid "<p>Toggle content goes here, click edit button to change this text.</p>"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1684
+msgid "Toggle block content."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1688
+msgid "Default state"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1691
+msgid "Closed"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1692
+msgid "Open"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1694
+msgid "Select \"Open\" if you want toggle to be open by default."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1733
+msgid "Tour"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1741
+msgid "Vertical tabbed content"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1745
+msgid "Auto rotate slides"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1749 shortcodes/class-shortcodes.php:2234
+msgid "Auto rotate slides each X seconds."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1896
+msgid "Single Image"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1900
+msgid "Simple image with CSS animation"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1910 shortcodes/class-shortcodes.php:2258
+msgid "Image source"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1913 shortcodes/class-shortcodes.php:2261
+msgid "Media library"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1914 shortcodes/class-shortcodes.php:1933
+msgid "External link"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1915
+msgid "Featured Image"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1918 shortcodes/class-shortcodes.php:2265
+msgid "Select image source."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1925
+msgid "Select image from media library."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1935
+msgid "Select external link."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1943 shortcodes/class-shortcodes.php:1962
+msgid "Image size"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1954 shortcodes/class-shortcodes.php:2301
+#: shortcodes/classes/clients-carousel.php:45
+msgid "Select image size."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1965
+msgid "Enter image size in pixels. Example: 200x100 (Width x Height)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1973
+msgid "Caption"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1975
+msgid "Enter text for image caption."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1983
+msgid "Add caption?"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1985
+msgid "Add image caption."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:1994
+msgid "Image alignment"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2001
+msgid "Select image alignment."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2005 shortcodes/class-shortcodes.php:2016
+msgid "Image style"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2008 shortcodes/class-shortcodes.php:2019
+msgid "Select image display style."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2027 shortcodes/class-shortcodes.php:2047
+msgid "Border color"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2042 shortcodes/class-shortcodes.php:2060
+msgid "Border color."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2065 shortcodes/class-shortcodes.php:2309
+msgid "On click action"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2068 shortcodes/class-shortcodes.php:2312
+#: shortcodes/classes/info-box.php:148
+msgid "None"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2069 shortcodes/class-shortcodes.php:2313
+msgid "Link to large image"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2070 shortcodes/class-shortcodes.php:2314
+msgid "Open prettyPhoto"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2071 shortcodes/class-shortcodes.php:2315
+msgid "Open custom link"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2072
+msgid "Zoom"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2074 shortcodes/class-shortcodes.php:2317
+msgid "Select action for click action."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2079
+msgid "Image link"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2081
+msgid ""
+"Enter URL if you want this image to have a link (Note: parameters like "
+"\"mailto:\" are also accepted)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2089
+msgid "Link Target"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2143
+msgid "Progress Bar"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2147
+msgid "Animated progress bar"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2157
+msgid "Values"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2159
+msgid ""
+"Enter values for graph - value, title and color. Divide value sets with "
+"linebreak \"Enter\" (Example: 90|Development|#e75956)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2164
+msgid "Units"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2166
+msgid ""
+"Enter measurement units (Example: %, px, points, etc. Note: graph value and "
+"units will be appended to graph title)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2170 shortcodes/classes/donut-chart.php:170
+#: shortcodes/classes/half-donut-chart.php:177
+msgid "Bar Color"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2172
+msgid ""
+"Select progress bar color. If empty \"Theme Color Scheme\" will be used."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2177
+msgid "Options"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2180
+msgid "Add stripes"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2181
+msgid "Add animation (Note: visible only with striped bar)."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2205
+msgid "Image Gallery"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2209
+msgid "Responsive image gallery"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2219
+msgid "Gallery type"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2222
+msgid "Flex slider fade"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2223
+msgid "Flex slider slide"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2224
+msgid "Nivo slider"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2225
+msgid "Image grid"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2227
+msgid "Select gallery type."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2242
+msgid "Grid Columns"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2250
+msgid "Select number of grid columns."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2262 shortcodes/class-shortcodes.php:2280
+msgid "External links"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2272
+msgid "Select images from media library."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2282
+msgid ""
+"Enter external link for each gallery image (Note: divide links with "
+"linebreaks (Enter))."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2290
+#: shortcodes/classes/clients-carousel.php:34
+msgid "Image Size"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2322
+msgid "Custom links"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2324
+msgid ""
+"Enter links for each slide (Note: divide links with linebreaks (Enter))."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2332
+msgid "Custom link target"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2334
+msgid "Select where to open  custom links."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2381 shortcodes/class-shortcodes.php:2402
+#: shortcodes/class-shortcodes.php:2423 shortcodes/class-shortcodes.php:2445
+#: shortcodes/class-shortcodes.php:2467 shortcodes/class-shortcodes.php:2489
+#: shortcodes/class-shortcodes.php:2510 shortcodes/class-shortcodes.php:2531
+#: shortcodes/class-shortcodes.php:2552 shortcodes/class-shortcodes.php:2574
+#: shortcodes/classes/blog-posts.php:54
+#: shortcodes/classes/portfolio-grid.php:52
+#: shortcodes/classes/posts-grid.php:52
+msgid "Columns"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2393 shortcodes/class-shortcodes.php:2414
+#: shortcodes/class-shortcodes.php:2435 shortcodes/class-shortcodes.php:2457
+#: shortcodes/class-shortcodes.php:2479 shortcodes/class-shortcodes.php:2501
+#: shortcodes/class-shortcodes.php:2522 shortcodes/class-shortcodes.php:2543
+#: shortcodes/class-shortcodes.php:2564 shortcodes/class-shortcodes.php:2586
+#: shortcodes/classes/blog-posts.php:63
+msgid "Select the number of columns."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2678
+msgid "Enter text to display in the Info Window."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2682
+msgid "Map Type"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2688
+msgid "Map Zoom"
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2700
+msgid "Drag & Drop marker to set your location."
+msgstr ""
+
+#: shortcodes/class-shortcodes.php:2737
+msgid ""
+"<strong>This theme</strong> requires <strong><a href=\"http://bit.ly/"
+"vcomposer\" target=\"_blank\">Visual Composer</a></strong> plugin to be "
+"installed and activated on your site."
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:13
+msgid "Vela : Blog Posts"
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:14
+msgid "Displays Blog Posts list."
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:28
+#: shortcodes/classes/clients-carousel.php:22
+#: shortcodes/classes/portfolio-grid.php:26
+#: shortcodes/classes/posts-grid.php:27 shortcodes/classes/posts-slider.php:23
+#: shortcodes/classes/team-slider.php:23
+#: shortcodes/classes/testimonials-slider.php:22
+msgid ""
+"Enter text which will be used as widget title. Leave blank if no title is "
+"needed."
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:33
+#: shortcodes/classes/half-donut-chart.php:28
+#: shortcodes/classes/portfolio-grid.php:31
+#: shortcodes/classes/posts-grid.php:32 shortcodes/classes/posts-slider.php:28
+#: shortcodes/classes/team-slider.php:28
+#: shortcodes/classes/testimonials-slider.php:27
+msgid "Description"
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:36
+#: shortcodes/classes/portfolio-grid.php:34
+#: shortcodes/classes/posts-grid.php:35 shortcodes/classes/posts-slider.php:31
+#: shortcodes/classes/team-slider.php:31
+#: shortcodes/classes/testimonials-slider.php:30
+msgid ""
+"Enter text which will be used as widget description. Leave blank if no "
+"description is needed."
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:84
+#: shortcodes/classes/portfolio-grid.php:85
+#: shortcodes/classes/posts-grid.php:39 shortcodes/classes/posts-slider.php:35
+#: shortcodes/classes/team-slider.php:35
+#: shortcodes/classes/testimonials-slider.php:34
+msgid "Custom Posts"
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:93
+#: shortcodes/classes/portfolio-grid.php:95
+#: shortcodes/classes/posts-grid.php:47 shortcodes/classes/posts-slider.php:43
+#: shortcodes/classes/team-slider.php:45
+#: shortcodes/classes/testimonials-slider.php:44
+msgid "Create WordPress loop, to populate content from your site."
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:98
+msgid "Number of Posts per Page"
+msgstr ""
+
+#: shortcodes/classes/blog-posts.php:100
+msgid "Enter the number of posts per page."
+msgstr ""
+
+#: shortcodes/classes/button.php:8
+msgid "Vela : Button"
+msgstr ""
+
+#: shortcodes/classes/button.php:9
+msgid "Add button."
+msgstr ""
+
+#: shortcodes/classes/button.php:29 shortcodes/classes/link-button.php:29
+msgid "Set a button link."
+msgstr ""
+
+#: shortcodes/classes/button.php:42 shortcodes/classes/link-button.php:133
+msgid "Select button style."
+msgstr ""
+
+#: shortcodes/classes/button.php:47 shortcodes/classes/link-button.php:138
+msgid "Size"
+msgstr ""
+
+#: shortcodes/classes/button.php:53 shortcodes/classes/link-button.php:144
+msgid "Select button size."
+msgstr ""
+
+#: shortcodes/classes/button.php:57 shortcodes/classes/link-button.php:148
+msgid "Button Color"
+msgstr ""
+
+#: shortcodes/classes/button.php:59 shortcodes/classes/link-button.php:150
+msgid "Select button color."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:8
+msgid "Vela : Clients Carousel"
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:9
+msgid "Create beautiful responsive carousel slider."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:50
+#: shortcodes/classes/team-slider.php:58
+msgid "Visible Items"
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:54
+#: shortcodes/classes/team-slider.php:62
+msgid "The maximum amount of items displayed at a time."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:63
+#: shortcodes/classes/posts-slider.php:61 shortcodes/classes/team-slider.php:71
+#: shortcodes/classes/testimonials-slider.php:61
+msgid "Display \"next\" and \"prev\" buttons."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:72
+#: shortcodes/classes/posts-slider.php:70 shortcodes/classes/team-slider.php:80
+#: shortcodes/classes/testimonials-slider.php:70
+msgid "Show pagination."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:77
+#: shortcodes/classes/posts-slider.php:75 shortcodes/classes/team-slider.php:85
+#: shortcodes/classes/testimonials-slider.php:75
+msgid "Auto Play"
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:82
+#: shortcodes/classes/posts-slider.php:80 shortcodes/classes/team-slider.php:90
+#: shortcodes/classes/testimonials-slider.php:80
+msgid "Auto play slide."
+msgstr ""
+
+#: shortcodes/classes/clients-carousel.php:91
+msgid "Inifnity loop. Duplicate last and first items to get loop illusion."
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:8
+msgid "Vela : Counter Box"
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:9
+msgid "Animated numbers."
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:23
+msgid "Set counter title."
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:121
+msgid "Start From"
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:124
+msgid "Set start value."
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:129
+msgid "Value"
+msgstr ""
+
+#: shortcodes/classes/counter-box.php:132
+msgid "Set counter value."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:8
+msgid "Vela : Donut Chart"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:9
+msgid "Animated donut chart."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:23
+#: shortcodes/classes/half-donut-chart.php:23
+msgid "Set chart title."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:28
+#: shortcodes/classes/half-donut-chart.php:36
+msgid "Chart Value"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:32
+msgid "Input chart value here. can be 1 to 100."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:37
+#: shortcodes/classes/half-donut-chart.php:45
+msgid "Label Mode"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:43
+#: shortcodes/classes/half-donut-chart.php:51
+msgid "Select a label mode."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:48
+#: shortcodes/classes/half-donut-chart.php:56
+msgid "Label"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:51
+#: shortcodes/classes/half-donut-chart.php:59
+msgid "Set chart label."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:165
+#: shortcodes/classes/half-donut-chart.php:172
+msgid "Select style."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:173
+#: shortcodes/classes/half-donut-chart.php:180
+msgid "Select bar color."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:186
+#: shortcodes/classes/half-donut-chart.php:193
+msgid "Fill Color"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:189
+#: shortcodes/classes/half-donut-chart.php:196
+msgid "Select background color of the whole circle."
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:194
+#: shortcodes/classes/half-donut-chart.php:201
+msgid "Start"
+msgstr ""
+
+#: shortcodes/classes/donut-chart.php:202
+#: shortcodes/classes/half-donut-chart.php:208
+msgid "Select the degree to start animate."
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:8
+msgid "Vela : Google Maps"
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:9
+msgid "Google Maps block."
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:23
+msgid "Map Height"
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:27
+msgid "Enter map height in pixels. Example: 300."
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:32
+msgid "Map Color"
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:35
+msgid ""
+"Select map background color. If empty \"Theme Color Scheme\" will be used."
+msgstr ""
+
+#: shortcodes/classes/gmaps.php:41
+msgid ""
+"To custom your own marker icon, upload or select images from media library."
+msgstr ""
+
+#: shortcodes/classes/half-donut-chart.php:8
+msgid "Vela : Half Donut Chart"
+msgstr ""
+
+#: shortcodes/classes/half-donut-chart.php:9
+msgid "Animated half donut chart."
+msgstr ""
+
+#: shortcodes/classes/half-donut-chart.php:31
+#: shortcodes/classes/info-box.php:32
+msgid "Enter your content."
+msgstr ""
+
+#: shortcodes/classes/half-donut-chart.php:40
+msgid "Input chart value here. Choose range between 0 and 100."
+msgstr ""
+
+#: shortcodes/classes/heading.php:8
+msgid "Vela : Heading"
+msgstr ""
+
+#: shortcodes/classes/heading.php:9
+msgid "Heading text."
+msgstr ""
+
+#: shortcodes/classes/heading.php:23
+msgid "Enter title text."
+msgstr ""
+
+#: shortcodes/classes/heading.php:28
+msgid "Sub Title"
+msgstr ""
+
+#: shortcodes/classes/heading.php:32
+msgid "Enter sub title text."
+msgstr ""
+
+#: shortcodes/classes/heading.php:51
+msgid "Select a heading separator style."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:8
+msgid "Vela : Icon Block"
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:9
+msgid "Add icon block."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:112 shortcodes/classes/info-box.php:130
+msgid "Icon Size"
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:120 shortcodes/classes/info-box.php:138
+msgid "Select icon size."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:125
+msgid "Icon Style"
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:131
+msgid "Select icon style."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:138
+msgid ""
+"Select icon background color. If empty \"Theme Color Scheme\" will be used."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:143
+#: shortcodes/classes/portfolio-grid.php:70
+msgid "Hover Effect"
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:154
+msgid "Select icon hover effect."
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:159
+msgid "URL"
+msgstr ""
+
+#: shortcodes/classes/icon-block.php:161
+msgid "Icon link."
+msgstr ""
+
+#: shortcodes/classes/info-box.php:9
+msgid "Vela : Info Box"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:10
+msgid "Content box with icon."
+msgstr ""
+
+#: shortcodes/classes/info-box.php:24
+msgid "Set info box title."
+msgstr ""
+
+#: shortcodes/classes/info-box.php:143
+msgid "Border Style"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:146
+msgid "Square"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:147
+msgid "Circle"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:151
+msgid "Select icon border style."
+msgstr ""
+
+#: shortcodes/classes/info-box.php:156
+msgid "Icon Position"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:159
+msgid "Align Left"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:160
+msgid "Align Top"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:161
+msgid "Align Right"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:164
+msgid "Select icon alignment."
+msgstr ""
+
+#: shortcodes/classes/info-box.php:169
+msgid "Color"
+msgstr ""
+
+#: shortcodes/classes/info-box.php:172
+msgid "Select an icon color."
+msgstr ""
+
+#: shortcodes/classes/link-button.php:8
+msgid "Vela : Link Button"
+msgstr ""
+
+#: shortcodes/classes/link-button.php:9
+msgid "Add link button with icon."
+msgstr ""
+
+#: shortcodes/classes/link-button.php:154
+msgid "Hover Color"
+msgstr ""
+
+#: shortcodes/classes/link-button.php:156
+msgid "Select hover text color."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:11
+msgid "Vela : Portfolio"
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:12
+msgid "Portfolio items in grid view."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:39
+msgid "View"
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:47
+msgid "Select grid view style."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:81
+msgid "Select the hover effect for portfolio items."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:100
+#: shortcodes/classes/posts-grid.php:67 shortcodes/classes/posts-slider.php:48
+#: shortcodes/classes/team-slider.php:50
+#: shortcodes/classes/testimonials-slider.php:49
+msgid "Post Count"
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:103
+#: shortcodes/classes/posts-grid.php:70 shortcodes/classes/posts-slider.php:52
+#: shortcodes/classes/team-slider.php:53
+#: shortcodes/classes/testimonials-slider.php:52
+msgid "Number of posts to show."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:112
+#: shortcodes/classes/posts-grid.php:79
+msgid "Display animated category filter to your grid."
+msgstr ""
+
+#: shortcodes/classes/portfolio-grid.php:121
+#: shortcodes/classes/posts-grid.php:88
+msgid "Display load more button."
+msgstr ""
+
+#: shortcodes/classes/posts-grid.php:13
+msgid "Vela : Posts Grid"
+msgstr ""
+
+#: shortcodes/classes/posts-grid.php:14
+msgid "Posts in grid view."
+msgstr ""
+
+#: shortcodes/classes/posts-slider.php:8
+msgid "Vela : Posts Slider"
+msgstr ""
+
+#: shortcodes/classes/posts-slider.php:9
+msgid "Posts in slider view."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:8
+msgid "Vela : Pricing Box"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:9
+msgid "Create pricing box."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:23
+msgid "Enter the heading or package name."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:28
+msgid "Sub Heading"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:31
+msgid "Enter a short description."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:36
+msgid "Price"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:40
+msgid "Enter a price. Example: $100"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:45
+msgid "Price Unit"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:48
+msgid "Enter a price unit. Example: per month"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:53
+msgid "Features"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:56
+msgid "Enter the features list or table description."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:61
+msgid "Button Text"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:64
+msgid "Enter a button text."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:69
+msgid "Button Link"
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:72
+msgid "Select or enter the link for button."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:88
+msgid "Select a text color."
+msgstr ""
+
+#: shortcodes/classes/pricing-box.php:93
+msgid "Featured Box"
+msgstr ""
+
+#: shortcodes/classes/team-slider.php:8
+msgid "Vela : Team Members Slider"
+msgstr ""
+
+#: shortcodes/classes/team-slider.php:9
+msgid "Team Members in slider view."
+msgstr ""
+
+#: shortcodes/classes/testimonials-slider.php:8
+msgid "Vela : Testimonials Slider"
+msgstr ""
+
+#: shortcodes/classes/testimonials-slider.php:9
+msgid "Testimonials in slider view."
+msgstr ""
+
+#: shortcodes/templates/portfolio_grid.php:77
+msgid "All"
+msgstr ""
+
+#: shortcodes/templates/team_slider.php:101
+msgid "More"
+msgstr ""
+
+#: shortcodes/templates/vc_accordion_tab.php:20
+msgid "Empty section. Edit page to add content here."
+msgstr ""
+
+#: shortcodes/templates/vc_tabs.php:53
+msgid "Previous tab"
+msgstr ""
+
+#: shortcodes/templates/vc_tabs.php:53
+msgid "Next tab"
+msgstr ""
+
+#: single-portfolio.php:119
+msgid "Client"
+msgstr ""
+
+#: single-portfolio.php:134
+msgid "Categories"
+msgstr ""
+
+#: single-portfolio.php:149
+msgid "Skills"
+msgstr ""
+
+#: single-portfolio.php:162
+msgid "Visit Site"
+msgstr ""
+
+#: widgets/facebook-like-widget.php:7
+msgid "Vela: Facebook Like"
+msgstr ""
+
+#: widgets/flickr-widget.php:7
+msgid "Vela: Flickr"
+msgstr ""
+
+#: widgets/popular-posts-widget.php:8
+msgid "Vela: Popular Posts"
+msgstr ""
+
+#: widgets/recent-posts-widget.php:9
+msgid "Vela: Recent Posts"
+msgstr ""

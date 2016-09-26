@@ -1,0 +1,126 @@
+.wpb_vc_column_text .textarea_html ul > li {
+    list-style: none;
+    list-style-position:outside;
+    padding-left: 25px;
+}
+
+.wpb_vc_column_text .textarea_html > ul > li,
+.wpb_vc_column_text .textarea_html > ol > li{
+    margin-bottom:10px;
+}
+
+.wpb_vc_column_text .textarea_html > ul > li:before{
+    position: absolute;
+    margin-right: 10px;
+    padding:0 2px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family:'FontAwesome';
+    font-size: inherit;
+    content: '\f138';
+    text-align: center;
+    margin-left: -25px;    
+}
+
+.vc_element-icon.vela-icon{
+    background-image: url(images/vela-icons.png)!important;
+}
+.vela-icon.counter-box-icon{
+    background-position: 0 0;
+}
+.vela-icon.icon-block-icon{
+    background-position: 0 -32px;
+}
+.vela-icon.portfolio-grid-icon{
+    background-position: 0 -64px;
+}
+.vela-icon.posts-slider-icon{
+    background-position: 0 -96px;
+}
+.vela-icon.testimonials-slider-icon{
+    background-position: 0 -128px;
+}
+.vela-icon.team-slider-icon{
+    background-position: 0 -160px;
+}
+.vela-icon.image-carousel-icon{
+    background-position: 0 -192px;
+}
+.vela-icon.pricing-box-icon{
+    background-position: 0 -225px;
+}
+.vela-icon.blog-posts-icon{
+    background-position: 0 -256px;
+}
+.vela-icon.info-box-icon{
+    background-position: 0 -288px;
+}
+.vela-icon.donut-chart-icon{
+    background-position: 0 -320px;
+}
+.vela-icon.half-donut-chart-icon{
+    background-position: 0 -352px;
+}
+.vela-icon.heading-icon{
+    background-position: 0 -384px;
+}
+.vela-icon.button-icon{
+    background-position: 0 -416px;
+}
+.vela-icon.link-button-icon{
+    background-position: 0 -448px;
+}
+
+.animation-field,
+.animation-preview{
+    width: 45%;
+    float: left;
+}
+.animation-preview span{
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 30px;
+    height: 38px;
+    line-height: 38px;
+    background: #000;
+    color: #fff;
+}
+
+.wyde_icons_field{
+    display: block;
+    height: 34px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+}
+
+.select2-selection__rendered, 
+.select2-results__option {
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 35px;
+    line-height: 35px;
+}
+
+.vc-icons-selector .selector .selected-icon i,
+.vc-icons-selector .fip-icons-container .fip-box{
+    font-size: 28px;
+}
+
+.wpb_el_type_tab_id{
+    display: none;
+}
+
+.wpb_vc_tabs > .wpb_element_wrapper .ui-tabs .ui-tabs-nav li a {
+  color: #848c91;
+  padding: 12px 16px;
+}

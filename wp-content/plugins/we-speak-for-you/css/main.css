@@ -1,0 +1,105 @@
+#preloader {
+  opacity: 0.7 !important;
+}
+
+.main-content {
+  padding-top: 170px !important;
+}
+ 
+.form-inline .form-group {
+  margin-right: 15px;
+}
+
+#request_form .form_time {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  #request_form .form-inline .form-group {
+    margin-bottom: 15px !important;
+  }
+}    
+
+#request_form .dropdown-select select {
+  width: 100%;
+}  
+
+.row-selected tr, .wsfy_translator_available_requests_tab {
+  cursor: pointer;
+}  
+
+.dataTables_length {
+  margin-bottom: 10px;
+}  
+
+.admin-settings input{
+  /*width: auto !important;*/
+}
+.admin-settings .dropdown-select, .admin-settings select {
+  width: 100%;
+}  
+.mb20 {
+  margin-bottom: 20px;
+}
+.upload{
+  /*display: none !important;*/  
+}
+
+#request_form .dropdown-select {
+  width: 100%;
+}  
+.col-lg-12, .col-md-12, .col-sm-12, .col-xs-12 {
+  float: left !important;
+  clear: none !important;
+}
+@media (max-width: 414px) {
+  .col-lg-12, .col-md-12, .col-sm-12, .col-xs-12 {
+    float: none;
+    clear: none;
+  }                        
+  
+  .form-inline .form-group {
+    margin-right: 0px !important;
+  }  
+  
+  #login h1 {
+    font-size: 36px;
+  }
+  
+  #login {
+    padding: 0px 15px;
+  }
+
+  .form-inline .form-group {
+    margin-right: 15px;
+  }
+  
+  .main-content {
+    padding-top: 60px !important;
+  }
+  
+  #request_form input, #request_form .dropdown-select, #request_form .form_time{
+    width: 100% !important;
+  }
+  .form-inline label {
+    margin-left: 0px;
+  } 
+  
+  #request_form .dropdown-select {
+    width: 100%;
+  }  
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .content {
+   width: 100% !important;
+}
+
+@media (max-width: 699px) and (min-width: 520px) {
+  @viewport {
+      width: 640px;
+      min-zoom: 0.25;
+      max-zoom: 5;
+  }
+}
+

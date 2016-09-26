@@ -1,0 +1,70 @@
+<wpml-config>
+    <admin-texts>
+        <key name="vela_options">
+            <key name="footer_text" />
+            <key name="blog_title" />
+            <key name="blog_single_related_title" />
+            <key name="portfolio_related_title" />
+        </key>
+    </admin-texts>   
+    <custom-types>
+        <custom-type translate="1">revslider</custom-type>
+        <custom-type translate="1">portfolio</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+        <custom-type translate="1">team-member</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">portfolio_category</taxonomy>
+        <taxonomy translate="1">portfolio_skill</taxonomy>
+    </taxonomies>
+    <custom-fields>
+        <custom-field action="copy">_meta_embed_url</custom-field>
+        <custom-field action="copy">_meta_gallery_images</custom-field>
+        <custom-field action="copy">_meta_post_link</custom-field>
+        <custom-field action="translate">_meta_post_quote</custom-field>
+        <custom-field action="translate">_meta_post_quote_author</custom-field>
+        <custom-field action="copy">_meta_post_custom_sidebar</custom-field>
+        <custom-field action="copy">_meta_post_custom_title</custom-field>
+        <custom-field action="copy">_meta_post_sidebar_position</custom-field>
+        <custom-field action="copy">_meta_portfolio_layout</custom-field>
+        <custom-field action="copy">_meta_project_url</custom-field>
+        <custom-field action="translate">_meta_client_name</custom-field>
+        <custom-field action="translate">_meta_client_detail</custom-field>
+        <custom-field action="copy">_meta_client_website</custom-field>
+        <custom-field action="copy">_meta_testimonial_image</custom-field>
+        <custom-field action="translate">_meta_testimonial_position</custom-field>
+        <custom-field action="translate">_meta_testimonial_company</custom-field>
+        <custom-field action="copy">_meta_testimonial_website</custom-field>
+        <custom-field action="copy">_meta_member_image</custom-field>
+        <custom-field action="translate">_meta_member_position</custom-field>
+        <custom-field action="copy">_meta_member_email</custom-field>
+        <custom-field action="copy">_meta_member_website</custom-field>
+        <custom-field action="copy">_meta_member_socials</custom-field>
+        <custom-field action="copy">_meta_sidebar_position</custom-field>
+        <custom-field action="copy">_meta_page_header</custom-field>
+        <custom-field action="copy">_meta_menu_style</custom-field>
+        <custom-field action="copy">_meta_slider_show</custom-field>
+        <custom-field action="translate">_meta_slider_item</custom-field>
+        <custom-field action="copy">_meta_title</custom-field>
+        <custom-field action="copy">_meta_title_align</custom-field>
+        <custom-field action="copy">_meta_title_background</custom-field>
+        <custom-field action="copy">_meta_title_background_image</custom-field>
+        <custom-field action="copy">_meta_title_background_video</custom-field>
+        <custom-field action="copy">_meta_title_background_color</custom-field>
+        <custom-field action="copy">_meta_title_background_size</custom-field>
+        <custom-field action="copy">_meta_title_background_parallax</custom-field>
+        <custom-field action="copy">_meta_title_overlay</custom-field>
+        <custom-field action="copy">_meta_title_overlay_color</custom-field>
+        <custom-field action="copy">_meta_title_mask</custom-field>
+        <custom-field action="copy">_meta_title_mask_color</custom-field>
+        <custom-field action="copy">_meta_background</custom-field>
+        <custom-field action="copy">_meta_background_image</custom-field>
+        <custom-field action="copy">_meta_background_video</custom-field>
+        <custom-field action="copy">_meta_background_color</custom-field>
+        <custom-field action="copy">_meta_background_size</custom-field>
+        <custom-field action="copy">_meta_background_overlay</custom-field>
+        <custom-field action="copy">_meta_background_overlay_color</custom-field>
+        <custom-field action="copy">_meta_background_parallax</custom-field>
+        <custom-field action="copy">_meta_page_footer</custom-field>
+    </custom-fields>
+</wpml-config>

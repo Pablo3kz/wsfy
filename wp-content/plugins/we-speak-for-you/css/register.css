@@ -1,0 +1,33 @@
+#registerform button{
+  width: 100%;
+}
+#login h1 {
+  font-size: 40px; 
+}
+#login p{
+  margin-bottom: 15px !important;  
+}
+#login input[type="text"], #login input[type="button"], #login select{
+  font-weight: normal !important;
+  width: 100%;
+}
+#login label{
+  width: 100%;
+}
+.title-wrapper {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  #login h1 {
+    font-size: 36px;
+  }
+  
+  #login {
+    padding: 0px 15px;
+  }
+}
+
+#login .dropdown-select {
+  width: 100%;
+}

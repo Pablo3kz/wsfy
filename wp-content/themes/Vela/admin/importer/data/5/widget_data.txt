@@ -1,0 +1,1 @@
+[{"blog":["vela-popular-posts-2","categories-2","tag_cloud-2"]},{"vela-popular-posts":{"2":{"title":"Popular Posts","number":5,"show_date":true},"_multiwidget":1},"categories":{"2":{"title":"","count":0,"hierarchical":0,"dropdown":0},"_multiwidget":1},"tag_cloud":{"2":{"title":"","taxonomy":"post_tag"},"_multiwidget":1}}]
