@@ -34,16 +34,52 @@
   
   function showCostByDuration(){
     var app_type = $('#wsfy_appointment_type').val();
+    $('#wsfy_cost_by_duration').val('');
+    
     if(!app_type){
       return;
     }
-    var price = wsfy_data.cost_by_duration[app_type][$('#wsfy_duration').val()];
-    if(price){
-      $('#wsfy_cost_by_duration').val(price);
-    }     
+    if(wsfy_data.cost_by_duration[app_type]) {
+      var price = wsfy_data.cost_by_duration[app_type][$('#wsfy_duration').val()];
+      if(price){
+        $('#wsfy_cost_by_duration').val(price);
+      }
+    }
+    
+    if(wsfy_data.request_appointment_sub_types[app_type]) {
+      var options = '<option value="">Select...</option>';
+      var current_val = $('#wsfy_appointment_sub_type').val();
+      $.each(wsfy_data.request_appointment_sub_types[app_type], function(index, type){
+        options += '<option value="'+type+'" '+(current_val == type?'selected':'')+'>'+type+'</option>'; 
+      });      
+      
+      if(!$('#pnlwsfy_appointment_sub_type').hasClass('hidden')) {
+        var subType = $('#wsfy_appointment_sub_type').val();
+        
+        if(wsfy_data.cost_by_requster_type[app_type][subType]) {
+          var price = wsfy_data.cost_by_requster_type[app_type][subType][wsfy_data.user_type];
+          console.log(subType);
+        }
+        if(price) {
+          $('#wsfy_cost_by_duration').val(price);  
+        }
+        
+        return;  
+      }      
+      
+      $('#wsfy_appointment_sub_type').html(options);
+      $('#pnlwsfy_appointment_sub_type').removeClass('hidden');
+    } else {
+      $('#wsfy_appointment_sub_type').html('');
+      $('#pnlwsfy_appointment_sub_type').addClass('hidden');
+    }
   }
   
   $('#wsfy_duration').change(function(){
+    showCostByDuration();
+  });
+
+  $('#wsfy_appointment_sub_type').change(function(){
     showCostByDuration();
   });
   

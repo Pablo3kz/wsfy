@@ -37,12 +37,14 @@ global
    $wsfy_interpreter_fields,
    $wsfy_post_statuses,
    $wsfy_request_appointment_types,
+   $wsfy_request_appointment_sub_types,
    $wsfy_cost_by_duration,
    $wsfy_languages,
    $wsfy_service_dashboard_columns,
    $request_fields,
    $wsfy_translator_dashboard_columns,
-   $wsfy_admin_dashboard_columns;
+   $wsfy_admin_dashboard_columns,
+   $wsfy_cost_by_requster_type;
 
 $wsfy_languages = [
   'Afrikaans',
@@ -77,6 +79,18 @@ $wsfy_request_appointment_types = [
   'workers-comp',
   'agency',
   'other'
+];
+
+$wsfy_request_appointment_sub_types = [
+  'workers-comp' => [
+    'deposition preps',
+    'half day deposition',
+    'full day deposition',
+    'transcript read backs',
+    'settlements and stipulations',
+    'telephonic settlements and stipulations',
+    'worker\'s compensation board appearances',
+  ]
 ];
 
 $wsfy_interpreters_allowed_appointment_types = [
@@ -146,7 +160,6 @@ function wsfy_cost_by_duration()
     $wpdb,
     $wsfy_cost_by_duration;
     
-  
   if(!is_plugin_active('we-speak-for-you/we-speak-for-you.php')) {
     return;
   }
@@ -157,6 +170,25 @@ function wsfy_cost_by_duration()
   }
 }
 wsfy_cost_by_duration();
+
+$wsfy_cost_by_requster_type = [];
+function wsfy_cost_by_requster_type()
+{
+  global 
+    $wpdb,
+    $wsfy_cost_by_requster_type;
+  
+  if(!is_plugin_active('we-speak-for-you/we-speak-for-you.php')) {
+    return;
+  }
+  
+  $rows = $wpdb->get_results('SELECT * FROM '.$wpdb->prefix.'wsfy_cost_by_requester_type ORDER BY appointment_type, appointment_sub_type');
+  foreach($rows as $row) {
+    $wsfy_cost_by_requster_type[$row->appointment_type][$row->appointment_sub_type][$row->requester_type] = $row->cost; 
+  }
+}
+wsfy_cost_by_requster_type();
+
 
 $wsfy_service_dashboard_columns = [
   'wsfy_appointment_type' => 'Appointment Type',
@@ -238,6 +270,7 @@ function create_tables() {
   $sql = "CREATE TABLE $table_name (
   request_id int(11) NOT NULL AUTO_INCREMENT,
   wsfy_appointment_type varchar(35) NOT NULL DEFAULT '',
+  wsfy_appointment_sub_type varchar(100) NOT NULL DEFAULT '',
   wsfy_date date DEFAULT NULL,
   wsfy_duration tinyint(2) NOT NULL DEFAULT '0',
   wsfy_start_time varchar(10) NOT NULL DEFAULT '',
@@ -360,7 +393,41 @@ function create_tables() {
   KEY interpreter_id (interpreter_id),
   KEY request_id_interpreter_id (request_id,interpreter_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
-  dbDelta( $sql ); 
+  dbDelta( $sql );
+  
+  $table_name = $wpdb->prefix . 'wsfy_cost_by_requester_type'; 
+  "CREATE TABLE $table_name (
+  cbrt_id int(11) NOT NULL AUTO_INCREMENT,
+  appointment_type varchar(30) NOT NULL DEFAULT '',
+  appointment_sub_type varchar(100) NOT NULL DEFAULT '',
+  requester_type varchar(35) NOT NULL DEFAULT '',
+  cost varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`cbrt_id`),
+  UNIQUE KEY `cbrt_id` (`cbrt_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;";
+  dbDelta( $sql );
+  $wpdb->get_results("INSERT INTO $table_name (appointment_type, appointment_sub_type, requester_type, cost) VALUES 
+  ('workers-comp', 'deposition preps', 'legal_requester', 'contact for cost'),
+  ('workers-comp', 'half day deposition', 'legal_requester', '400'),
+  ('workers-comp', 'full day deposition', 'legal_requester', '800'),
+  ('workers-comp', 'transcript read backs', 'legal_requester', 'contact for cost'),
+  ('workers-comp', 'settlements and stipulations', 'legal_requester', 'contact for cost'),
+  ('workers-comp', 'telephonic settlements and stipulations', 'legal_requester', 'contact for cost'),
+  ('workers-comp', 'worker''s compensation board appearances', 'legal_requester', 'contact for cost'),
+  ('workers-comp', 'deposition preps', 'insurance_requester', '165'),
+  ('workers-comp', 'half day deposition', 'insurance_requester', '400'),
+  ('workers-comp', 'full day deposition', 'insurance_requester', '800'),
+  ('workers-comp', 'transcript read backs', 'insurance_requester', '275'),
+  ('workers-comp', 'settlements and stipulations', 'insurance_requester', '275'),
+  ('workers-comp', 'telephonic settlements and stipulations', 'insurance_requester', '275'),
+  ('workers-comp', 'worker''s compensation board appearances', 'insurance_requester', '195'),
+  ('workers-comp', 'deposition preps', 'agency_requester', '130'),
+  ('workers-comp', 'half day deposition', 'agency_requester', '250'),
+  ('workers-comp', 'full day deposition', 'agency_requester', '500'),
+  ('workers-comp', 'transcript read backs', 'agency_requester', '150'),
+  ('workers-comp', 'settlements and stipulations', 'agency_requester', '150'),
+  ('workers-comp', 'telephonic settlements and stipulations', 'agency_requester', '120'),
+  ('workers-comp', 'worker''s compensation board appearances', 'agency_requester', '120');");
 }
 register_activation_hook( __FILE__, 'create_tables' );
 register_activation_hook(__FILE__, 'wsfy_activation');
@@ -424,7 +491,10 @@ function wsfy_deactivation()
 
 function wsfy_scripts()
 {
-  global $wsfy_cost_by_duration;
+  global
+    $wsfy_cost_by_duration,
+    $wsfy_cost_by_requster_type,
+    $wsfy_request_appointment_sub_types;
 
   wp_enqueue_style( 'custom-register-css', WSFY_URL . '/css/register.css',[], WSFY_VERSION);
   wp_register_script('custom-register-js', WSFY_URL . '/js/register.js', ['jquery'], WSFY_VERSION, true);
@@ -433,7 +503,10 @@ function wsfy_scripts()
       'admin_url' => get_admin_url(),
       'site_url' => site_url(),
       'cost_by_duration' => $wsfy_cost_by_duration,
-      'request_service_url' => WSFY_REQUEST_SERVICE_URL
+      'cost_by_requster_type' => $wsfy_cost_by_requster_type,
+      'request_appointment_sub_types' => $wsfy_request_appointment_sub_types,
+      'request_service_url' => WSFY_REQUEST_SERVICE_URL,
+      'user_type' => get_user_role()
     ]
   );
   wp_enqueue_script( 'custom-register-js');
@@ -866,6 +939,12 @@ function ajax_wsfy_request_translator()
       }
     }
     $values = array_intersect_key($data, array_flip($request_fields));
+    array_walk($values, function(&$item, $key){
+      global $wpdb;
+      $item = $wpdb->prepare($item);
+    });
+    
+    
     $values['post_id'] = $postID;
     $values['status_updated_at'] = date('Y-m-d H:i:s');
     $values['requester_id'] = $postData['post_author'];
@@ -876,10 +955,8 @@ function ajax_wsfy_request_translator()
       $values['created_at'] = date('Y-m-d H:i:s');
       $values['status'] = WSFY_POST_STATUS_PUBLISHED;
       $wpdb->insert($wpdb->prefix.'wsfy_requests', $values);
-      #request_created_notify($values);
       change_request_status_notify('request_created_admin', (object)$values);
       change_request_status_notify('request_created_requester', (object)$values);
-      
     }
     $response = [
       'success' => true,
@@ -922,7 +999,8 @@ function get_service_dashboard_aData()
   CONCAT(wsfy_translate_from, " to ", wsfy_translate_to) AS wsfy_translation_type,
   wsfy_date,
   status,
-  request_id
+  request_id,
+  wsfy_appointment_sub_type
   FROM '.$wpdb->prefix.'wsfy_requests WHERE requester_id='.get_current_user_id().$order.$limit;
   
   $data = $wpdb->get_results($sql);
@@ -1028,11 +1106,12 @@ function construct_requests_widget()
     wsfy_start_time AS wsfy_time,
     CONCAT(wsfy_duration, "hrs") AS wsfy_length,
     (SELECT payout FROM '.$wpdb->prefix.'wsfy_appointment_payouts_by_duration WHERE user_type LIKE '.($role == WSFY_ROLE_ADMIN?'r.accepted_by_user_type':'"'.$role.'"').' AND duration = r.wsfy_duration) AS wsfy_pay_rate,
-    (SELECT cost FROM '.$wpdb->prefix.'wsfy_cost_by_duration WHERE appointment_type LIKE r.wsfy_appointment_type AND duration = r.wsfy_duration) AS wsfy_cost,
+    r.wsfy_cost_by_duration AS wsfy_cost,
     wsfy_attached_file,
     post_id,
     r.status,
-    TIMEDIFF(finished_at, started_at) AS duration
+    TIMEDIFF(finished_at, started_at) AS duration,
+    wsfy_appointment_sub_type
   FROM '.$wpdb->prefix.'wsfy_requests AS r '.$join;
   
   if(!empty($whereAND)) {

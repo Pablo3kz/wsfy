@@ -14,7 +14,8 @@ global
   $wyde_options, 
   $wyde_page_id, 
   $wyde_sidebar_position,
-  $wsfy_user_types_requesters;
+  $wsfy_user_types_requesters,
+  $wsfy_request_appointment_sub_types;
 
   wp_enqueue_script('wsfy-request-service-js', WSFY_URL . '/js/request-service.js', ['jquery'], WSFY_VERSION, true);
 
@@ -66,7 +67,7 @@ global
                     <div class="row form-group">
                       <div id="pnlwsfy_appointment_type" class="col-xs-12 col-sm-4">
                         <label class="control-label" for="wsfy_appointment_type">Appointment Type*:</label>
-                        <select id="wsfy_appointment_type" name="wsfy_appointment_type" class="form-control">
+                        <select id="wsfy_appointment_type" name="wsfy_appointment_type" class="form-control" autocomplete="off">
                           <option value="">Select...</option>
                           <?php
                           global $wsfy_request_appointment_types;
@@ -79,13 +80,29 @@ global
                       </div> 
                       <div id="pnlwsfy_date" class="col-xs-12 col-sm-2">
                         <label class="control-label" for="wsfy_date">Date*:</label>
-                        <div class="input-group date form_time col-md-5" id="dtpwsfy_date" data-link-field="wsfy_date" data-date="<?=$wsfy_date?:'';?>" data-link-format="yyyy-mm-dd">
-                            <input class="form-control" size="16" type="text" value="<?= $wsfy_date?date('m/d/Y', strtotime($wsfy_date)):'';?>" readonly />
+                        <div class="input-group date form_time col-md-5" id="dtpwsfy_date" data-link-field="wsfy_date" data-date="<?=$wsfy_date?:'';?>" data-link-format="yyyy-mm-dd" />
+                            <input autocomplete="off" class="form-control" size="16" type="text" value="<?= $wsfy_date?date('m/d/Y', strtotime($wsfy_date)):'';?>" readonly />
                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
                         <input type="hidden" id="wsfy_date" name="wsfy_date" value="<?= $wsfy_date;?>" />    
                       </div>
                     </div>    
+
+                    <?php
+                    $options = $wsfy_appointment_sub_type?$wsfy_request_appointment_sub_types[$wsfy_appointment_type]:[];
+                    ?>
+                    <div class="row form-group">
+                      <div id="pnlwsfy_appointment_sub_type" class="col-xs-12 col-sm-4 <?= $wsfy_appointment_sub_type?'':'hidden'?>">
+                        <label class="control-label" for="wsfy_appointment_sub_type">Appointment Sub Type*:</label>
+                        <select id="wsfy_appointment_sub_type" name="wsfy_appointment_sub_type" class="form-control" autocomplete="off">
+                          <?php
+                          foreach($options as $option) {
+                            echo '<option '.($wsfy_appointment_sub_type == $option?'selected':'').' value="'.$option.'">'.$option.'</option>';  
+                          }
+                          ?>
+                        </select>
+                      </div> 
+                    </div> 
 
                     <div class="row form-group">
                       <div class="col-xs-12 col-sm-12">
@@ -116,7 +133,7 @@ global
                       </div>
                       <div class="col-xs-12 col-sm-2">
                         <label for="wsfy_address1">Cost:</label>
-                        <input type='text' class="form-control text-right" id='wsfy_cost_by_duration' name="wsfy_cost_by_duration" disabled="true"/>
+                        <input autocomplete="off" type='text' class="form-control text-right" id='wsfy_cost_by_duration' name="wsfy_cost_by_duration" disabled="true"/>
                       </div>
                       <div id="pnlwsfy_start_time" class="col-xs-12 col-sm-2">
                         <label for="wsfy_start_time">Start Time*:</label>
@@ -126,7 +143,7 @@ global
                           data-date-format="HH:iiP"
                           data-link-format="HH:iiP" 
                         >
-                            <input class="form-control" size="16" type="text" value="<?= $wsfy_start_time;?>" readonly />
+                            <input autocomplete="off" class="form-control" size="16" type="text" value="<?= $wsfy_start_time;?>" readonly />
                             <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                         </div>
                         <input type="hidden" id="wsfy_start_time" name="wsfy_start_time" value="<?= $wsfy_start_time;?>" />  
@@ -136,30 +153,30 @@ global
                     <div class="row form-group">
                       <div class="col-xs-12 col-sm-6">
                         <label for="wsfy_address1">Address1:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_address1;?>" id="wsfy_address1" name="wsfy_address1" placeholder="Address1" />
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_address1;?>" id="wsfy_address1" name="wsfy_address1" placeholder="Address1" />
                       </div>
                       <div class="col-xs-12 col-sm-6">
                         <label for="wsfy_address1">Address2:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_address2;?>" id="wsfy_address2" name="wsfy_address2" placeholder="Address2" />
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_address2;?>" id="wsfy_address2" name="wsfy_address2" placeholder="Address2" />
                       </div>  
                     </div>
                     
                     <div class="row form-group">
                       <div class="col-xs-12 col-sm-3">
                         <label for="wsfy_address1">City:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_city;?>" id="wsfy_city" name="wsfy_city" placeholder="City" />
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_city;?>" id="wsfy_city" name="wsfy_city" placeholder="City" />
                       </div>
                       <div id="pnlwsfy_county" class="col-xs-12 col-sm-3">
                         <label class="control-label" for="wsfy_address1">County*:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_county;?>" id="wsfy_county" name="wsfy_county" placeholder="County" />
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_county;?>" id="wsfy_county" name="wsfy_county" placeholder="County" />
                       </div>
                       <div id="pnlwsfy_zip" class="col-xs-12 col-sm-3">
                         <label class="control-label" for="wsfy_address1">ZIP*:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_zip;?>" id="wsfy_zip" name="wsfy_zip" placeholder="ZIP"/>
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_zip;?>" id="wsfy_zip" name="wsfy_zip" maxlength="5" placeholder="ZIP"/>
                       </div>  
                       <div id="pnlwsfy_state" class="col-xs-12 col-sm-3">
                         <label class="control-label" for="wsfy_address1">State*:</label>
-                        <input type="text" class="form-control" value="<?= $wsfy_state;?>" id="wsfy_state" name="wsfy_state" placeholder="State"/>
+                        <input autocomplete="off" type="text" class="form-control" value="<?= $wsfy_state;?>" id="wsfy_state" name="wsfy_state" maxlength="20" placeholder="State"/>
                       </div>  
                     </div>
                     

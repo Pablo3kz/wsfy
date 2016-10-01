@@ -51,7 +51,7 @@ if($wyde_options['onepage'] && is_front_page()){
                         <div class="form-group">
                           <div class="form-group">   
                             <label>Display Appointments:</label>
-                            <select id="available_requests_select">
+                            <select id="available_requests_select" autocomplete="off">
                               <option value="all_requests">All</option>
                               <option value="pending_requests">Pending</option>
                             </select> 

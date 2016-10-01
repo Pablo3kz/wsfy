@@ -14,6 +14,11 @@
                   {
                     data: 'wsfy_appointment_type',
                     title: 'Appointment Type',
+                    render: function(data, type, full, meta)
+                    {
+                      data = full.wsfy_appointment_sub_type?data+'/'+full['wsfy_appointment_sub_type']:data;
+                      return data;  
+                    }                                         
                   },               
                   {
                     data: 'wsfy_translation_type',
