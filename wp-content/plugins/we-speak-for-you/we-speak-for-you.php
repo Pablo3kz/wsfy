@@ -398,7 +398,7 @@ function create_tables() {
   dbDelta( $sql );
   
   $table_name = $wpdb->prefix . 'wsfy_cost_by_requester_type'; 
-  "CREATE TABLE $table_name (
+  $sql = "CREATE TABLE $table_name (
   cbrt_id int(11) NOT NULL AUTO_INCREMENT,
   appointment_type varchar(30) NOT NULL DEFAULT '',
   appointment_sub_type varchar(100) NOT NULL DEFAULT '',
@@ -406,7 +406,7 @@ function create_tables() {
   cost varchar(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`cbrt_id`),
   UNIQUE KEY `cbrt_id` (`cbrt_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;";
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
   dbDelta( $sql );
   $wpdb->get_results("INSERT INTO $table_name (appointment_type, appointment_sub_type, requester_type, cost) VALUES 
   ('workers-comp', 'deposition preps', 'legal_requester', 'contact for cost'),
@@ -490,7 +490,8 @@ function wsfy_deactivation()
     'wsfy_appointment_payouts_by_duration',
     'wsfy_rejected_requests',
     'wsfy_denied_requests',
-    'wsfy_canceled_requests'
+    'wsfy_canceled_requests',
+    'wsfy_cost_by_requester_type'
   ];
   foreach($wsfy_table as $table_name) {
     $wpdb->query('DROP TABLE IF EXISTS '.$wpdb->prefix.$table_name);  
@@ -1091,7 +1092,7 @@ function ajax_wsfy_export_requests()
     wsfy_start_time AS wsfy_time,
     CONCAT(wsfy_duration, "hrs") AS wsfy_length,
     r.wsfy_cost_by_duration AS wsfy_cost,
-    (SELECT payout FROM wp_wsfy_appointment_payouts_by_duration WHERE user_type LIKE r.accepted_by_user_type AND duration = r.wsfy_duration) AS wsfy_pay_rate
+    (SELECT payout FROM '.$wpdb->prefix.'wsfy_appointment_payouts_by_duration WHERE user_type LIKE r.accepted_by_user_type AND duration = r.wsfy_duration) AS wsfy_pay_rate
     FROM '.$wpdb->prefix.'wsfy_requests AS r 
     LEFT JOIN '.$wpdb->prefix.'users AS ur ON ur.ID = r.requester_id
     LEFT JOIN '.$wpdb->prefix.'users AS ui ON ui.ID = r.accepted_by 
