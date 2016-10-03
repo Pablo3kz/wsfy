@@ -58,20 +58,20 @@
         
         if(wsfy_data.cost_by_requster_type[app_type][subType]) {
           var price = wsfy_data.cost_by_requster_type[app_type][subType][wsfy_data.user_type];
-          console.log(subType);
         }
         if(price) {
           $('#wsfy_cost_by_duration').val(price);  
         }
-        
         return;  
       }      
       
       $('#wsfy_appointment_sub_type').html(options);
       $('#pnlwsfy_appointment_sub_type').removeClass('hidden');
+      $('#pnlwsfy_duration').addClass('hidden');
     } else {
       $('#wsfy_appointment_sub_type').html('');
       $('#pnlwsfy_appointment_sub_type').addClass('hidden');
+      $('#pnlwsfy_duration').removeClass('hidden');
     }
   }
   

@@ -24,6 +24,11 @@ wp_enqueue_script('wsfy-jquery-datatables', WSFY_URL . '/js/jquery.dataTables.mi
 
 wp_enqueue_style( 'wsfy-jquery-datatables-css', WSFY_URL . '/css/jquery.dataTables.min.css',[], WSFY_VERSION);
 
+wp_enqueue_script('wsfy-datatables-buttons', WSFY_URL . '/js/jquery.dataTables.min.js', ['wsfy-jquery-datatables'], WSFY_VERSION, true);
+wp_enqueue_script('wsfy-datatables-buttons', WSFY_URL . '/js/dataTables.buttons.min.js', ['wsfy-jquery-datatables'], WSFY_VERSION, true);
+wp_enqueue_script('wsfy-buttons-html5', WSFY_URL . '/js/buttons.html5.min.js', ['wsfy-jquery-datatables'], WSFY_VERSION, true);
+wp_enqueue_script('wsfy-buttons-colVis', WSFY_URL . '/js/buttons.colVis.min.js', ['wsfy-jquery-datatables'], WSFY_VERSION, true);
+
   
 ?>
 <?php get_header(); ?>
@@ -46,18 +51,23 @@ if($wyde_options['onepage'] && is_front_page()){
                 <div class="page-detail content">
                     <div class="page-detail-inner">
                       <h3 class="text-center">Administrator Dashboard</h3>                        
-                      <div>
-                      
-                        <div class="form-group">
-                          <div class="form-group">   
-                            <label>Display Appointments:</label>
-                            <select id="available_requests_select" autocomplete="off">
-                              <option value="all_requests">All</option>
-                              <option value="pending_requests">Pending</option>
-                            </select> 
-                          </div>                           
-                          <table id="wsfy_requests" class="display row-selected" cellspacing="0" width="100%">
-                          </table>
+                      <div style="position: relative;">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-6 mb10">
+                              <label>Display Appointments:</label>
+                              <select id="available_requests_select" autocomplete="off">
+                                <option value="all_requests">All</option>
+                                <option value="pending_requests">Pending</option>
+                              </select>                         
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <button id="export_requests" class="btn btn-default mr-xs pull-right" type="button">Export</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                          <table id="wsfy_requests" class="display row-selected" cellspacing="0" width="100%"></table>
+                          </div>
                         </div>
                         
 <div class="form-group admin-settings">

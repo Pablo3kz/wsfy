@@ -65,7 +65,7 @@ global
                     <div>
                         
                     <div class="row form-group">
-                      <div id="pnlwsfy_appointment_type" class="col-xs-12 col-sm-4">
+                      <div id="pnlwsfy_appointment_type" class="col-xs-12 col-sm-2">
                         <label class="control-label" for="wsfy_appointment_type">Appointment Type*:</label>
                         <select id="wsfy_appointment_type" name="wsfy_appointment_type" class="form-control" autocomplete="off">
                           <option value="">Select...</option>
@@ -78,6 +78,22 @@ global
                           ?>
                         </select>
                       </div> 
+                      <?php
+                      $options = $wsfy_appointment_sub_type?$wsfy_request_appointment_sub_types[$wsfy_appointment_type]:[];
+                      ?>                     
+                      <div id="pnlwsfy_appointment_sub_type" class="col-xs-12 col-sm-4 <?= $wsfy_appointment_sub_type?'':'hidden'?>">
+                        <label class="control-label" for="wsfy_appointment_sub_type">&nbsp;</label>
+                        <select id="wsfy_appointment_sub_type" name="wsfy_appointment_sub_type" class="form-control" autocomplete="off">
+                          <?php
+                          foreach($options as $option) {
+                            echo '<option '.($wsfy_appointment_sub_type == $option?'selected':'').' value="'.$option.'">'.$option.'</option>';  
+                          }
+                          ?>
+                        </select>
+                      </div>                      
+                    </div>    
+
+                    <div class="row form-group">
                       <div id="pnlwsfy_date" class="col-xs-12 col-sm-2">
                         <label class="control-label" for="wsfy_date">Date*:</label>
                         <div class="input-group date form_time col-md-5" id="dtpwsfy_date" data-link-field="wsfy_date" data-date="<?=$wsfy_date?:'';?>" data-link-format="yyyy-mm-dd" />
@@ -86,24 +102,39 @@ global
                         </div>
                         <input type="hidden" id="wsfy_date" name="wsfy_date" value="<?= $wsfy_date;?>" />    
                       </div>
-                    </div>    
-
-                    <?php
-                    $options = $wsfy_appointment_sub_type?$wsfy_request_appointment_sub_types[$wsfy_appointment_type]:[];
-                    ?>
-                    <div class="row form-group">
-                      <div id="pnlwsfy_appointment_sub_type" class="col-xs-12 col-sm-4 <?= $wsfy_appointment_sub_type?'':'hidden'?>">
-                        <label class="control-label" for="wsfy_appointment_sub_type">Appointment Sub Type*:</label>
-                        <select id="wsfy_appointment_sub_type" name="wsfy_appointment_sub_type" class="form-control" autocomplete="off">
-                          <?php
-                          foreach($options as $option) {
-                            echo '<option '.($wsfy_appointment_sub_type == $option?'selected':'').' value="'.$option.'">'.$option.'</option>';  
+                      <div id="pnlwsfy_start_time" class="col-xs-12 col-sm-2">
+                        <label for="wsfy_start_time">Start Time*:</label>
+                        <div class="input-group date form_time col-md-5" id="dtpwsfy_start_time" 
+                          data-link-field="wsfy_start_time" 
+                          data-date="<?= $wsfy_start_time;?>" 
+                          data-date-format="HH:iiP"
+                          data-link-format="HH:iiP" 
+                        >
+                            <input autocomplete="off" class="form-control" size="16" type="text" value="<?= $wsfy_start_time;?>" readonly />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                        </div>
+                        <input type="hidden" id="wsfy_start_time" name="wsfy_start_time" value="<?= $wsfy_start_time;?>" />  
+                      </div>
+                      <div id="pnlwsfy_duration" class="col-xs-12 col-sm-2">
+                        <label class="control-label" for="wsfy_duration">Duration*:</label>
+                        <select id="wsfy_duration" name="wsfy_duration" class="form-control" autocomplete="off">
+                          <option value="">Select...</option>
+                          <?
+                          foreach([2=>'2 hours',3=>'3 hours (half day)',6=>'6 hours (full day)'] as $h=>$title) {
+                            echo '<option '.($wsfy_duration == $h?'selected':'').' value="'.$h.'">'.$title.'</option>';
                           }
                           ?>
                         </select>
-                      </div> 
+                      </div>
+                      <div class="col-xs-12 col-sm-1">
+                        <label>Cost:</label>
+                        <input autocomplete="off" type='text' class="form-control text-right" id='wsfy_cost_by_duration' name="wsfy_cost_by_duration" disabled="true"/>
+                      </div>                      
+                                            
+                      
+                      
                     </div> 
-
+                    
                     <div class="row form-group">
                       <div class="col-xs-12 col-sm-12">
                         <label for="wsfy_date">Attached file (pdf, jpg, jpeg, png, doc, docx): <a id="download_attached_file" target="_blank" class="admin-settings <?= (!$wsfy_attached_file?'hidden':'');?>" href="<?= site_url().'/'.$wsfy_attached_file?>"><?= site_url().'/'.$wsfy_attached_file?></a></label>
@@ -119,37 +150,6 @@ global
                       </div> 
                     </div>  
                                          
-                    <div class="row form-group">
-                      <div id="pnlwsfy_duration" class="col-xs-12 col-sm-4">
-                        <label class="control-label" for="wsfy_duration">Duration*:</label>
-                        <select id="wsfy_duration" name="wsfy_duration" class="form-control">
-                          <option value="">Select...</option>
-                          <?
-                          foreach([2=>'2 hours',3=>'3 hours (half day)',6=>'6 hours (full day)'] as $h=>$title) {
-                            echo '<option '.($wsfy_duration == $h?'selected':'').' value="'.$h.'">'.$title.'</option>';
-                          }
-                          ?>
-                        </select>
-                      </div>
-                      <div class="col-xs-12 col-sm-2">
-                        <label for="wsfy_address1">Cost:</label>
-                        <input autocomplete="off" type='text' class="form-control text-right" id='wsfy_cost_by_duration' name="wsfy_cost_by_duration" disabled="true"/>
-                      </div>
-                      <div id="pnlwsfy_start_time" class="col-xs-12 col-sm-2">
-                        <label for="wsfy_start_time">Start Time*:</label>
-                        <div class="input-group date form_time col-md-5" id="dtpwsfy_start_time" 
-                          data-link-field="wsfy_start_time" 
-                          data-date="<?= $wsfy_start_time;?>" 
-                          data-date-format="HH:iiP"
-                          data-link-format="HH:iiP" 
-                        >
-                            <input autocomplete="off" class="form-control" size="16" type="text" value="<?= $wsfy_start_time;?>" readonly />
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                        </div>
-                        <input type="hidden" id="wsfy_start_time" name="wsfy_start_time" value="<?= $wsfy_start_time;?>" />  
-                      </div>
-                    </div>
-                    
                     <div class="row form-group">
                       <div class="col-xs-12 col-sm-6">
                         <label for="wsfy_address1">Address1:</label>

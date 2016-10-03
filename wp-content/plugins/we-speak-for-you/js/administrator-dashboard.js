@@ -8,7 +8,7 @@
           "serverSide": true,
           "bFilter" : true,
           "oSearch": {"sSearch": "all_requests"},
-          "dom": '<<t>lp>',          
+          "dom": '<<t>lp>',     
           "ajax": ajax_search_settings.ajaxURL+"?action=wsfy_translator_available_requests",
               "columns": [
                   {
@@ -75,6 +75,11 @@
                     }                     
                   },
                   {
+                    data: 'request_id',
+                    title: 'Order #',
+                    className: 'text-right',
+                  },                               
+                  {
                     data: 'wsfy_attached_file',
                     title: 'Attached File',
                     className: 'text-right unclickable',
@@ -98,6 +103,28 @@
 
       $('#available_requests_select').change(function(){
         wsfy_requests.search($(this).val()).draw();   
+      });
+
+      $('#export_requests').click(function(){
+        $.ajax({
+          type: 'GET',
+          dataType: 'json',
+          url: ajax_search_settings.ajaxURL,
+          data: {
+              'action': 'wsfy_export_requests',
+              'request_type': $('#available_requests_select').val()
+          },
+          success: function(data) {
+            if(data.success){
+              if(data.file_url){
+                window.location.assign(data.file_url);  
+              }
+            } else {
+            }
+          },
+          error: function(errorThrown) {
+          }
+        });           
       });
 
       $('#request_details .modal-footer button').each(function() {
@@ -153,7 +180,6 @@
                 'post_id': $('tr.selected input').val()
             },
             success: function(data) {
-              console.log(data);
               if(data.success)
               {
                 if(data.hide_buttons) {
@@ -206,9 +232,6 @@
                 });                       
               });
       });        
-
-
-
 
       $('.btn-cost-setting').each(function() {
               $(this).click(function(){
