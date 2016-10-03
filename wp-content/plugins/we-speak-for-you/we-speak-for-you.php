@@ -436,7 +436,14 @@ function create_tables() {
   ('workers-comp', 'transcript read backs', 'medical_requester', '275'),
   ('workers-comp', 'settlements and stipulations', 'medical_requester', '275'),
   ('workers-comp', 'telephonic settlements and stipulations', 'medical_requester', '275'),
-  ('workers-comp', 'worker`s compensation board appearances', 'medical_requester', '195');");
+  ('workers-comp', 'worker`s compensation board appearances', 'medical_requester', '195'),
+  ('workers-comp', 'deposition preps', 'other_requester', '165'),
+  ('workers-comp', 'half day deposition', 'other_requester', '400'),
+  ('workers-comp', 'full day deposition', 'other_requester', '800'),
+  ('workers-comp', 'transcript read backs', 'other_requester', '275'),
+  ('workers-comp', 'settlements and stipulations', 'other_requester', '275'),
+  ('workers-comp', 'telephonic settlements and stipulations', 'other_requester', '275'),
+  ('workers-comp', 'worker`s compensation board appearances', 'other_requester', '195');");
 }
 register_activation_hook( __FILE__, 'create_tables' );
 register_activation_hook(__FILE__, 'wsfy_activation');
@@ -897,7 +904,9 @@ function validate_request_data($data)
 {
   global
     $wsfy_request_required_fields,
-    $wsfy_request_appointment_sub_types;
+    $wsfy_request_appointment_sub_types,
+    $wsfy_cost_by_requster_type,
+    $wsfy_cost_by_duration;
   
   $errors = [];
   foreach($wsfy_request_required_fields as $field => $label) {
@@ -914,16 +923,26 @@ function validate_request_data($data)
       $errors['wsfy_date'] = 'Date should be in the future.';
     }
   } 
-  
+
+  $cost = $data['wsfy_cost_by_duration'];
   if($wsfy_request_appointment_sub_types[$data['wsfy_appointment_type']]) {
     unset($errors['wsfy_duration']);     
     if(!$data['wsfy_appointment_sub_type']) {
       $errors['wsfy_appointment_sub_type'] = 'Appointment type is required.';
       unset($errors['wsfy_duration']); 
-    }  
+    } else {
+      $true_cost = ($cost == $wsfy_cost_by_requster_type[$data['wsfy_appointment_type']][$data['wsfy_appointment_sub_type']][get_user_role()]);
+    }
   } else {
+    $true_cost = ($cost == $wsfy_cost_by_duration[$data['wsfy_appointment_type']][$data['wsfy_duration']]);
+    
     unset($errors['wsfy_appointment_sub_type']);      
   } 
+  
+  if(!$true_cost) {
+    $errors['wsfy_cost_by_duration'] = 'Wrong the cost field value!';
+  }    
+  
   return $errors;
 }
 

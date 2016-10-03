@@ -126,7 +126,7 @@ global
                           ?>
                         </select>
                       </div>
-                      <div class="col-xs-12 col-sm-1">
+                      <div id="pnlwsfy_cost_by_duration" class="col-xs-12 col-sm-1">
                         <label>Cost:</label>
                         <input autocomplete="off" type='text' class="form-control text-right" id='wsfy_cost_by_duration' name="wsfy_cost_by_duration" disabled="true"/>
                       </div>                      
