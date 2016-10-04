@@ -17,11 +17,11 @@ define('WSFY_POST_TYPE', 'wsfy_request');
 
 define('WSFY_ROLE_ADMIN', 'administrator');
 
-define('WSFY_POST_STATUS_PUBLISHED', 'published');
-define('WSFY_POST_STATUS_CANCELED', 'canceled');
-define('WSFY_POST_STATUS_ACCEPTED', 'accepted');
-define('WSFY_POST_STATUS_PENDING', 'published');
-define('WSFY_POST_STATUS_APPROVED', 'approved');
+
+define('WSFY_POST_STATUS_PUBLISHED', 'published');//Published By The requester
+define('WSFY_POST_STATUS_CANCELED', 'canceled');//Canceled By The requester
+define('WSFY_POST_STATUS_ACCEPTED', 'accepted');//Accepted By The Interpretator
+define('WSFY_POST_STATUS_APPROVED', 'approved');//The Accepted Request Is Approved By The Administrator
 
 define('WSFY_REQUEST_SERVICE_URL', site_url('request-service'));
 define('WSFY_REQUESTER_DASHBOARD_URL', site_url('service-dashboard'));
@@ -35,7 +35,6 @@ global
    $wsfy_user_types_interpreters,
    $wsfy_requester_fields,
    $wsfy_interpreter_fields,
-   $wsfy_post_statuses,
    $wsfy_request_appointment_types,
    $wsfy_request_appointment_sub_types,
    $wsfy_cost_by_duration,
@@ -45,6 +44,7 @@ global
    $wsfy_translator_dashboard_columns,
    $wsfy_admin_dashboard_columns,
    $wsfy_cost_by_requster_type;
+
 
 $wsfy_languages = [
   'Afrikaans',
@@ -62,7 +62,6 @@ $wsfy_user_types_requesters = [
   'agency_requester' => 'Agency requester',
   'other_requester' => 'Other requester',
 ];
-
 
 $wsfy_user_types_interpreters = [
   'qualified_interpreter' => 'Qualified Interpreter',
@@ -101,13 +100,7 @@ $wsfy_interpreters_allowed_appointment_types = [
   'federal_interpreter' => $wsfy_request_appointment_types
 ];
 
-$wsfy_post_statuses = [
-  'published'  => 'Published By The requester',
-  'canceled'  => 'Canceled By The requester',
-  'accepted' => 'Accepted By The Interpretator',
-  'approved' => 'The Accepted Request Is Approved By The Administrator'
-];
-
+//Fields for the registration of the requesters
 $wsfy_requester_fields = [
   ['name' => 'first_name', 'label' => 'First Name', 'isRequired' => true],
   ['name' => 'last_name', 'label' => 'Last Name', 'isRequired' => true],
@@ -121,6 +114,7 @@ $wsfy_requester_fields = [
   ['name' => 'company_name', 'label' => 'Company Name', 'isRequired' => true]
 ];
 
+//Fields for registration of the interpreters(ara translators)
 $wsfy_interpreter_fields = [
   ['name' => 'first_name', 'label' => 'First Name', 'isRequired' => true],
   ['name' => 'last_name', 'label' => 'Last Name', 'isRequired' => true],
@@ -153,6 +147,10 @@ $wsfy_interpreter_fields = [
   ],
 ];
 
+/**
+ *  Fill the "wsfy_cost_by_duration array" from the DB table 
+ *
+ */
 $wsfy_cost_by_duration = [];
 function wsfy_cost_by_duration()
 {
@@ -171,6 +169,10 @@ function wsfy_cost_by_duration()
 }
 wsfy_cost_by_duration();
 
+/**
+ *  Fill the "wsfy_cost_by_requster_type" array from the DB table
+ *
+ */
 $wsfy_cost_by_requster_type = [];
 function wsfy_cost_by_requster_type()
 {
@@ -189,7 +191,10 @@ function wsfy_cost_by_requster_type()
 }
 wsfy_cost_by_requster_type();
 
-
+/**
+ *  The fields names from the query that uses for build "Service Dashboard" widget
+ *
+ */
 $wsfy_service_dashboard_columns = [
   'wsfy_appointment_type' => 'Appointment Type',
   'wsfy_translation_type' => 'Translation Type',
@@ -198,6 +203,10 @@ $wsfy_service_dashboard_columns = [
   'request_id' =>'Order #'
 ];
 
+/**
+ *  The fields names from the query that uses for build "Translator Dashboard" widget
+ *
+ */
 $wsfy_translator_dashboard_columns = [
   'wsfy_appointment_type' => 'Appointment Type',
   'wsfy_translation_type' => 'Translation Type',
@@ -209,6 +218,10 @@ $wsfy_translator_dashboard_columns = [
   'wsfy_pay_rate' =>'Pay Rate'
 ];
 
+/**
+ *  The fields names from the query that uses for build "Admin Dashboard" widget
+ *
+ */
 $wsfy_admin_dashboard_columns = [
   'wsfy_appointment_type' => 'Appointment Type',
   'wsfy_translation_type' => 'Translation Type',
@@ -222,6 +235,10 @@ $wsfy_admin_dashboard_columns = [
   'request_id' =>'Order #'
 ];
 
+/**
+ *  The list of the required fields for the request
+ *
+ */
 $wsfy_request_required_fields = [
   'wsfy_appointment_type' => 'Appointment Type',
   'wsfy_appointment_sub_type' => 'Appointment Type',
@@ -239,6 +256,11 @@ if(!function_exists('wp_handle_upload')){
   require_once( ABSPATH . 'wp-admin/includes/file.php' );
 }
 
+/**
+ *  Returns the fields list of the given table
+ *  @param $table - the table name from the DB
+ *  @returns the fields names array of the $table table 
+ */
 $request_fields = get_table_fields_names($wpdb->prefix.'wsfy_requests');
 function get_table_fields_names($table)
 {
@@ -253,16 +275,11 @@ function get_table_fields_names($table)
   return $columns;  
 }
 
-function wsfy_load()
-{
-    if(is_admin()) {
-      require_once(WSFY_DIR.'includes/admin.php');
-    }  
- 
-    require_once(WSFY_DIR.'includes/core.php');
-}
-wsfy_load();
 
+/**
+ *  Creates tables of the plugin and fill some of them by the first data
+ *
+ */
 function create_tables() {
 	global $wpdb;
 
@@ -447,9 +464,12 @@ function create_tables() {
 }
 register_activation_hook( __FILE__, 'create_tables' );
 register_activation_hook(__FILE__, 'wsfy_activation');
-
 register_deactivation_hook(__FILE__, 'wsfy_deactivation');
- 
+
+/**
+ *  Plugin activation
+ *
+ */ 
 function wsfy_activation()
 {
   global $wsfy_user_types_requesters, $wsfy_user_types_interpreters;
@@ -475,7 +495,11 @@ function wsfy_activation()
     add_role( $role, $type, $capabilities );  
   }  
 }
- 
+
+/**
+ *  Plugin deactivation
+ *
+ */ 
 function wsfy_deactivation()
 {
   global 
@@ -505,7 +529,10 @@ function wsfy_deactivation()
   }   
 }
 
-
+/**
+ *  Includes all plugin's JS and CSS files
+ *
+ */ 
 function wsfy_scripts()
 {
   global
@@ -540,6 +567,12 @@ function wsfy_scripts()
 }
 add_action( 'wp_enqueue_scripts', 'wsfy_scripts' );
 
+/**
+ *  Generates html of the Select user type for the register form
+ * @param $roles - array of the roles names
+ * @param $user_type - Base Title of the user type(Requester|Interpreter)
+ * @return $html - generated HTMl code of the "select who You are" block
+ */ 
 function getRolesOptions($roles, $user_type = '')
 {
   $html = '';
@@ -562,6 +595,11 @@ function getRolesOptions($roles, $user_type = '')
   return $html;
 }
 
+/**
+ *  Generates html of the control
+ * @param $control_data - data of the control
+ * @return $html - generated HTMl code of the control
+ */ 
 function get_control_by_type($control_data)
 {
   $cntrl = '';
@@ -585,6 +623,10 @@ function get_control_by_type($control_data)
   return $cntrl;
 }
 
+/**
+ *  Generates html of the single block of the user's fields
+ * @return $html - generated HTMl code of the single block
+ */ 
 function getRolesFieldsHTML($fields)
 {
   $html = ''; $style='';
@@ -608,6 +650,10 @@ function getRolesFieldsHTML($fields)
   return $html.($style?'<style>'.$style.'</style>':'');
 }
 
+/**
+ *  Returns the requester's fields for the registration page
+ * @return $html - generated HTMl code
+ */ 
 function ajax_get_requester_fields()
 {
   global $wsfy_user_types_requesters, 
@@ -626,6 +672,10 @@ function ajax_get_requester_fields()
 add_action('wp_ajax_get_requester_fields', 'ajax_get_requester_fields');
 add_action('wp_ajax_nopriv_get_requester_fields', 'ajax_get_requester_fields' );
 
+/**
+ *  Returns the interpreter's fields for the registration page
+ * @return $html - generated HTMl code
+ */ 
 function ajax_get_interpreter_fields()
 {
   global $wsfy_user_types_interpreters,
@@ -644,14 +694,17 @@ function ajax_get_interpreter_fields()
 add_action('wp_ajax_get_interpreter_fields', 'ajax_get_interpreter_fields');
 add_action('wp_ajax_nopriv_get_interpreter_fields', 'ajax_get_interpreter_fields' );
 
+/**
+ *  Validates the data of the registered user
+ * @return $errors - the array of the errors: key - field name, value - error msg
+ */ 
 function validate_profile_data(&$data)
 {
   global
      $wsfy_user_types_requesters, 
      $wsfy_user_types_interpreters,
      $wsfy_requester_fields,
-     $wsfy_interpreter_fields,
-     $wsfy_post_statuses;  
+     $wsfy_interpreter_fields;  
   
   $errors = [];
   
@@ -708,6 +761,9 @@ function validate_profile_data(&$data)
   return $errors; 
 }
 
+/**
+ *  Register the user
+ */ 
 function ajax_wsfy_register()
 {
   $userData = $_POST['form_data'];
@@ -744,6 +800,9 @@ function ajax_wsfy_register()
 add_action('wp_ajax_wsfy_register', 'ajax_wsfy_register');
 add_action('wp_ajax_nopriv_wsfy_register', 'ajax_wsfy_register' );
 
+/**
+ *  Register the user's meta data
+ */ 
 function register_user_meta($user_id, $data)
 {
   global 
@@ -768,6 +827,9 @@ function register_user_meta($user_id, $data)
   }
 }
 
+/**
+ *  Notifies the admin about user registration
+ */ 
 function user_registered_notify_admin($registered_user)
 {
   global 
@@ -801,6 +863,9 @@ function user_registered_notify_admin($registered_user)
   remove_filter('wp_mail_content_type', 'wp_mail_set_html_content_type');  
 }
 
+/**
+ *  Notifies the registered user about successully registration
+ */ 
 function signup_notifications($data)
 {
   $siteTitle = get_bloginfo('name');
@@ -823,10 +888,17 @@ function signup_notifications($data)
     remove_filter('wp_mail_content_type', 'wp_mail_set_html_content_type');
 }
 
+/**
+ *  Filetr for the sending HTML emails 
+ */ 
 function wp_mail_set_html_content_type() {
 	return 'text/html';
 }
 
+/**
+ *  Generates the HTML code of the message that shows after successfully updated request.
+ * @return $html - HTML code of the message
+ */ 
 function success_msg_html($data)
 {
   if($data['post_id']) {
@@ -860,6 +932,9 @@ function success_msg_html($data)
   return $html;
 }
 
+/**
+ *  Change the request status
+ */ 
 function ajax_wsfy_request_change_status()
 {
   global $wpdb;
@@ -888,6 +963,11 @@ function ajax_wsfy_request_change_status()
 }
 add_action('wp_ajax_wsfy_request_change_status', 'ajax_wsfy_request_change_status');
 
+/**
+ *  Checks whether the request can  be edited
+ * @param $post_id - post ID of the request
+ * @return $request - the model of the wp_posts table that can be edited
+ */ 
 function is_post_editable($post_id)
 {
     $request = get_post($post_id);
@@ -900,6 +980,11 @@ function is_post_editable($post_id)
     return $request;  
 }
 
+/**
+ *  Validates the request data before saving in the DB
+ * @param $data - the request data
+ * @return $errors - the array of the errors. Key - field name, value - error msg
+ */ 
 function validate_request_data($data)
 {
   global
@@ -946,6 +1031,9 @@ function validate_request_data($data)
   return $errors;
 }
 
+/**
+ *  Try to save the request in the DB
+ */
 function ajax_wsfy_request_translator()
 {
   global $request_fields, $wpdb;
@@ -985,7 +1073,6 @@ function ajax_wsfy_request_translator()
       $item = $wpdb->prepare($item);
     });
     
-    
     $values['post_id'] = $postID;
     $values['status_updated_at'] = date('Y-m-d H:i:s');
     $values['requester_id'] = $postData['post_author'];
@@ -1016,7 +1103,11 @@ function ajax_wsfy_request_translator()
 }
 add_action('wp_ajax_wsfy_request_translator', 'ajax_wsfy_request_translator');
 
-
+/**
+ *  Returns "order by" and "limit" text for the query from the DataTable data
+ *  @param $data_table__columns - data of the DataTable widget
+ *  @return $order - "ORDER BY xxx DESC|ASC" text, $limit - "LIMIT x,x"
+ */
 function get_data_table_options($data_table__columns)
 {
   $tableData = $_REQUEST;
@@ -1026,6 +1117,10 @@ function get_data_table_options($data_table__columns)
   return [$order, $limit];
 }
 
+/**
+ *  Returns the data for the DataTable "Service Dashboard" widget
+ *  @return array of the objects - data for the widget
+ */
 function get_service_dashboard_aData()
 {
   global 
@@ -1048,6 +1143,10 @@ function get_service_dashboard_aData()
   return $data;
 }
 
+/**
+ *  Returns all data for the "Service Dashboard" widget
+ *  @return array of the data in the DataTable format
+ */
 function ajax_wsfy_service_dashboard_data()
 {
   global $wpdb;
@@ -1070,6 +1169,10 @@ function ajax_wsfy_service_dashboard_data()
 }
 add_action('wp_ajax_wsfy_service_dashboard_data', 'ajax_wsfy_service_dashboard_data');
 
+/**
+ *  Returns logged in user's role
+ *  @return $user_role - logged in user's role
+ */
 function get_user_role() {
     global $current_user;
 
@@ -1079,6 +1182,10 @@ function get_user_role() {
     return $user_role;
 }
 
+/**
+ *  Generate the CSV file for export
+ *  @return file_url - URL link to the file
+ */
 function ajax_wsfy_export_requests()
 {
   global
@@ -1161,6 +1268,10 @@ function ajax_wsfy_export_requests()
 }
 add_action('wp_ajax_wsfy_export_requests', 'ajax_wsfy_export_requests');
 
+/**
+ *  Returns the all data for the widgets on the Translate and Admin dashboards
+ *  @return array of the data in the DataTable format 
+ */
 function construct_requests_widget()
 {
   global
@@ -1262,6 +1373,10 @@ function ajax_wsfy_translator_available_requests()
 }
 add_action('wp_ajax_wsfy_translator_available_requests', 'ajax_wsfy_translator_available_requests');
 
+/**
+ *  Generate the HTML code of the request details popup
+ *  @return the HTML code of the popup window
+ */
 function ajax_wsfy_get_request_details()
 {
   global
@@ -1353,6 +1468,9 @@ function ajax_wsfy_get_request_details()
 }
 add_action('wp_ajax_wsfy_get_request_details', 'ajax_wsfy_get_request_details');
 
+/**
+ *  Sends the notification to the users when the request's status was changed
+ */
 function change_request_status_notify($action, $request_data, $extra_params = [])
 {
   global 
@@ -1459,6 +1577,9 @@ function change_request_status_notify($action, $request_data, $extra_params = []
   remove_filter('wp_mail_content_type', 'wp_mail_set_html_content_type');     
 }
 
+/**
+ *  Change the request status
+ */
 function change_request_status()
 {
   global 
@@ -1640,12 +1761,18 @@ function change_request_status()
   die();    
 }
 
+/**
+ *  The translator accept the request
+ */
 function ajax_wsfy_accept_request()
 {
   change_request_status();
 }
 add_action('wp_ajax_wsfy_accept_request', 'ajax_wsfy_accept_request');
 
+/**
+ *  Save edited payouts settings
+ */
 function ajax_wsfy_save_payout_settings()
 {
   global $wpdb;
@@ -1678,6 +1805,9 @@ function ajax_wsfy_save_payout_settings()
 } 
 add_action('wp_ajax_wsfy_save_payout_settings', 'ajax_wsfy_save_payout_settings');
 
+/**
+ *  Save edited cost settings
+ */
 function ajax_wsfy_save_cost_settings()
 {
   global $wpdb;
@@ -1710,7 +1840,9 @@ function ajax_wsfy_save_cost_settings()
 } 
 add_action('wp_ajax_wsfy_save_cost_settings', 'ajax_wsfy_save_cost_settings');
 
-
+/**
+ *  Redirects after user's login
+ */
 add_filter('login_redirect', function($redirect_to, $requested_redirect_to, $user) {
   global 
     $wsfy_user_types_interpreters,
@@ -1752,7 +1884,9 @@ function add_login_out_item_to_menu( $items, $args ){
 
   
 }add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );*/
-
+/**
+ *  Customize the admin bar menu
+ */
 function admin_custom_bar_menu() 
 {
   global $wp_admin_bar;   

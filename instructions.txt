@@ -1,0 +1,48 @@
+1. Install plugins:
+  1.1 Nav Menu Roles - Hide custom menu items based on user roles.
+  1.2 BAW Login/Logout menu - You can now add a correct login & logout link in your WP menus.Need to change menu login(redirect to index), register(redirect to index)
+  1.3 WP Custom Login - This plugin is adding the header and footer to the login page
+  1.4 Custom Login URL - Plugin allows to change: login, registration, lost password URLs to some custom URLs without modifying any files, simple and swift.
+  1.5 AJAX File Upload - AJAX File Upload - fast and easy front-end WordPress file uploader with shortcodes
+  1.6 Easy Updates Manager - Manage and disable WordPress updates, including core, plugin, theme, and automatic updates - Works with Multisite and has built-in logging features.
+
+2. Добавить в functions.php:
+/* bypass wordpress are you sure you want to logout screen when logging out of an already logged out account. */
+function smart_logout() {
+	if (!is_user_logged_in()) {
+		$smart_redirect_to = !empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '/';
+		wp_safe_redirect( $smart_redirect_to );
+		exit();
+	} else {
+		check_admin_referer('log-out');
+		wp_logout();
+		$smart_redirect_to = !empty( $_REQUEST['redirect_to'] ) ? $_REQUEST['redirect_to'] : '/';
+		wp_safe_redirect( $smart_redirect_to );
+		exit();
+	}
+}
+add_action ( 'login_form_logout' , 'smart_logout' );
+
+
+
+3. Custom Post Types and Custom Fields creator - WCK
+
+4. WP-Mail-SMTP
+wsfyou@gmail.com/
+
+5. Add excluded URL http://screencast.com/t/tYcGIUgtA4Pg
+
+6. Copy template file "wsfy-request-template.php" to the theme folder.
+
+7. Pages creation
+  7.0 Copy all templates to the Vela theme
+  7.1 Create page "Request Service"(url: request-service) with template="wsfy-request". Add custom link with URL in the menu for logged in user. Add URL of the page to the excluded.
+  7.2. Create page "Service Dashboard"(url: service-dashboard) with template="wsfy-service-dashboard". Add custom link with URL in the menu for logged in user. Add URL of the page to the excluded.
+  7.2. Create page "Translator Dashboard"(url: translator-dashboard) with template="wsfy-translator-dashboard". Add custom link with URL in the menu for logged in user. Add URL of the page to the excluded.
+  7.3. Create page "administrator dashboard"(url: administrator-dashboard) with template="wsfy-admin-dashboard". Add custom link with URL in the menu for logged in user. Add URL of the page to the excluded.
+  
+
+8. Settings->permalinks - change login URL and redirect url
+
+
+9. header.php - commented <meta name="viewport" content="width=device-width, initial-scale=1.0<?php echo esc_attr($disable_zoom); ?>" />
